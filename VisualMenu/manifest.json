@@ -1,0 +1,38 @@
+{
+  "Actions": [
+    {
+      "Icon": "Images/icon",
+      "Name": "Daz Visual Menu Integration",
+      "States": [
+        {
+          "Image": "Images/pluginAction",
+          "TitleAlignment": "middle",
+          "FontSize": "12"
+        }
+      ],
+      "SupportedInMultiActions": false,
+      "Tooltip": "TODO_ENTER_TOOLTIP",
+      "UUID": "com.windamyre.daztools.visualmenu",
+      "PropertyInspectorPath": "PropertyInspector/PluginActionPI.html"
+    }
+  ],
+  "Author": "Windamyre",
+  "Name": "VisualMenu",
+  "Description": "Integrates with Daz Studio Visual Menus",
+  "Icon": "Images/pluginIcon",
+  "URL": "TODO_ENTER_YOUR_HOMEPAGE",
+  "Version": "1.0",
+  "CodePath": "VisualMenu",
+  "Category": "Daz Studio Tools",
+  "CategoryIcon": "Images/categoryIcon",
+  "OS": [
+    {
+      "Platform": "windows",
+      "MinimumVersion": "10"
+    }
+  ],
+  "SDKVersion": 2,
+  "Software": {
+    "MinimumVersion": "4.9"
+  }
+}
