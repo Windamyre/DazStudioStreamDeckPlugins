@@ -76,6 +76,7 @@
     <Compile Include="vmMenu.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Visual Menu Template\1eba9645-64fa-4dc7-89e1-b5e1944275ff.json" />
     <None Include="App.config" />
     <None Include="manifest.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -83,6 +84,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Visual Menu Template\1eba9645-64fa-4dc7-89e1-b5e1944275ff.png" />
     <Content Include="Images\categoryIcon%402x.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

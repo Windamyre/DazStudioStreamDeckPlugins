@@ -1,0 +1,242 @@
+{
+     "docType": "visualMenus",
+     "fileType": "template",
+     "docVersion": "1.0",
+     "menuLabel": "",
+     "menuName": "",
+     "menuGeometry": {
+          "width": 314,
+          "height": 197
+     },
+     "templateInfo": {
+          "templateName": "1eba9645-64fa-4dc7-89e1-b5e1944275ff",
+          "label": "StreamDeck",
+          "preferredIconLayout": "IconTopTextBottom"
+     },
+     "shortcut": "",
+     "menuType": "",
+     "customActionID": "",
+     "buttonLayout": {},
+     "menuStyle": {
+          "styleSheetText": "QPushButton{background: #808080; border-radius: 0px; border: none; }\nQPushButton:hover{background: #FF8000; border-radius: 0px; border: none; }\nQLabel{color: #FFFFFF; font-family: \"Arial\";font-size: 11px; font-weight: normal; font-style: none; text-decoration: none; }\n"
+     },
+     "positionPrefs": {
+          "locationType": "LastPos",
+          "lastPosX": "",
+          "lastPosY": "",
+          "mouseOffsetX": 0,
+          "mouseOffsetY": 0
+     },
+     "actionList": [
+          {
+               "buttonGeometry": {
+                    "x": 10,
+                    "y": 20,
+                    "height": 51,
+                    "width": 51
+               },
+               "buttonName": "pushButton_0_0",
+               "buttonStyle": {},
+               "buttonLayout": {
+                    "visible": true
+               },
+               "buttonAction": {}
+          },
+          {
+               "buttonGeometry": {
+                    "x": 70,
+                    "y": 20,
+                    "height": 51,
+                    "width": 51
+               },
+               "buttonName": "pushButton_1_0",
+               "buttonStyle": {},
+               "buttonLayout": {
+                    "visible": true
+               },
+               "buttonAction": {}
+          },
+          {
+               "buttonGeometry": {
+                    "x": 130,
+                    "y": 20,
+                    "height": 51,
+                    "width": 51
+               },
+               "buttonName": "pushButton_2_0",
+               "buttonStyle": {},
+               "buttonLayout": {
+                    "visible": true
+               },
+               "buttonAction": {}
+          },
+          {
+               "buttonGeometry": {
+                    "x": 190,
+                    "y": 20,
+                    "height": 51,
+                    "width": 51
+               },
+               "buttonName": "pushButton_3_0",
+               "buttonStyle": {},
+               "buttonLayout": {
+                    "visible": true
+               },
+               "buttonAction": {}
+          },
+          {
+               "buttonGeometry": {
+                    "x": 250,
+                    "y": 20,
+                    "height": 51,
+                    "width": 51
+               },
+               "buttonName": "pushButton_4_0",
+               "buttonStyle": {},
+               "buttonLayout": {
+                    "visible": true
+               },
+               "buttonAction": {}
+          },
+          {
+               "buttonGeometry": {
+                    "x": 10,
+                    "y": 80,
+                    "height": 51,
+                    "width": 51
+               },
+               "buttonName": "pushButton_0_1",
+               "buttonStyle": {},
+               "buttonLayout": {
+                    "visible": true
+               },
+               "buttonAction": {}
+          },
+          {
+               "buttonGeometry": {
+                    "x": 70,
+                    "y": 80,
+                    "height": 51,
+                    "width": 51
+               },
+               "buttonName": "pushButton_1_1",
+               "buttonStyle": {},
+               "buttonLayout": {
+                    "visible": true
+               },
+               "buttonAction": {}
+          },
+          {
+               "buttonGeometry": {
+                    "x": 130,
+                    "y": 80,
+                    "height": 51,
+                    "width": 51
+               },
+               "buttonName": "pushButton_2_1",
+               "buttonStyle": {},
+               "buttonLayout": {
+                    "visible": true
+               },
+               "buttonAction": {}
+          },
+          {
+               "buttonGeometry": {
+                    "x": 190,
+                    "y": 80,
+                    "height": 51,
+                    "width": 51
+               },
+               "buttonName": "pushButton_3_1",
+               "buttonStyle": {},
+               "buttonLayout": {
+                    "visible": true
+               },
+               "buttonAction": {}
+          },
+          {
+               "buttonGeometry": {
+                    "x": 250,
+                    "y": 80,
+                    "height": 51,
+                    "width": 51
+               },
+               "buttonName": "pushButton_4_1",
+               "buttonStyle": {},
+               "buttonLayout": {
+                    "visible": true
+               },
+               "buttonAction": {}
+          },
+          {
+               "buttonGeometry": {
+                    "x": 10,
+                    "y": 140,
+                    "height": 51,
+                    "width": 51
+               },
+               "buttonName": "pushButton_0_2",
+               "buttonStyle": {},
+               "buttonLayout": {
+                    "visible": true
+               },
+               "buttonAction": {}
+          },
+          {
+               "buttonGeometry": {
+                    "x": 70,
+                    "y": 140,
+                    "height": 51,
+                    "width": 51
+               },
+               "buttonName": "pushButton_1_2",
+               "buttonStyle": {},
+               "buttonLayout": {
+                    "visible": true
+               },
+               "buttonAction": {}
+          },
+          {
+               "buttonGeometry": {
+                    "x": 130,
+                    "y": 140,
+                    "height": 51,
+                    "width": 51
+               },
+               "buttonName": "pushButton_2_2",
+               "buttonStyle": {},
+               "buttonLayout": {
+                    "visible": true
+               },
+               "buttonAction": {}
+          },
+          {
+               "buttonGeometry": {
+                    "x": 190,
+                    "y": 140,
+                    "height": 51,
+                    "width": 51
+               },
+               "buttonName": "pushButton_3_2",
+               "buttonStyle": {},
+               "buttonLayout": {
+                    "visible": true
+               },
+               "buttonAction": {}
+          },
+          {
+               "buttonGeometry": {
+                    "x": 250,
+                    "y": 140,
+                    "height": 51,
+                    "width": 51
+               },
+               "buttonName": "pushButton_4_2",
+               "buttonStyle": {},
+               "buttonLayout": {
+                    "visible": true
+               },
+               "buttonAction": {}
+          }
+     ]
+}
