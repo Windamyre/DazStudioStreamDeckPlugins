@@ -2,27 +2,27 @@
   "Actions": [
     {
       "Icon": "Images/icon",
-      "Name": "Daz Visual Menu Integration",
+      "Name": "Daz Custom Shortcut",
       "States": [
         {
           "Image": "Images/pluginAction",
           "TitleAlignment": "middle",
-          "FontSize": "12"
+          "FontSize": "10"
         }
       ],
       "SupportedInMultiActions": false,
-      "Tooltip": "TODO_ENTER_TOOLTIP",
-      "UUID": "com.windamyre.daztools.visualmenu",
-      "PropertyInspectorPath": "PropertyInspector/PluginActionPI.html"
+      "Tooltip": "Activate selected custom action",
+      "UUID": "com.windamyre.daztools.customshortcut",
+      "PropertyInspectorPath": "PropertyInspector/CustomShortcutPI.html"
     }
   ],
   "Author": "Windamyre",
-  "Name": "VisualMenu",
-  "Description": "Integrates with Daz Studio Visual Menus",
+  "Name": "Daz Studio Tools",
+  "Description": "Streamdeck tools for Daz Studio",
   "Icon": "Images/pluginIcon",
-  "URL": "TODO_ENTER_YOUR_HOMEPAGE",
-  "Version": "1.0",
-  "CodePath": "VisualMenu",
+  "URL": "https://github.com/Windamyre",
+  "Version": "0.2",
+  "CodePath": "CustomShortcut.exe",
   "Category": "Daz Studio Tools",
   "CategoryIcon": "Images/categoryIcon",
   "OS": [
