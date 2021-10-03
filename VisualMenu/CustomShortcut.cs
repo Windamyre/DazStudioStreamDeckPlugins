@@ -25,11 +25,6 @@ namespace VisualMenu
                 instance.actionList = new ActionList();
                 return instance;
             }
-
-
-            [JsonProperty(PropertyName = "dazLoaded")]
-            public bool isDazLoaded { get; set; }
-
             /// <summary>
             /// The currently selected action's GUID as a string.
             /// </summary>
@@ -90,22 +85,13 @@ namespace VisualMenu
         public override void KeyPressed(KeyPayload payload)
         {
             Logger.Instance.LogMessage(TracingLevel.INFO, "Key Pressed ");
-            string webcontent;
-            try
-            {
-                HttpWebRequest req = (HttpWebRequest)WebRequest.Create($"http://localhost:8080/action/{settings.ActionName}");
-                var response = req.GetResponse();
 
-                using (var strm = new StreamReader(response.GetResponseStream()))
-                {
-                    webcontent = strm.ReadToEnd();
-                }
-                this.settings.isDazLoaded = true;
-            }
-            catch
+            HttpWebRequest req = (HttpWebRequest)WebRequest.Create($"http://localhost:8080/action/{settings.ActionName}");
+            var response = req.GetResponse();
+            string webcontent;
+            using (var strm = new StreamReader(response.GetResponseStream()))
             {
-                this.settings.isDazLoaded = false;
-                Logger.Instance.LogMessage(TracingLevel.INFO, "Daz Studio Not Loaded");
+                webcontent = strm.ReadToEnd();
             }
         }
 
@@ -120,7 +106,6 @@ namespace VisualMenu
             Tools.AutoPopulateSettings(settings, payload.Settings);
             LoadActionData();
             await SaveSettings();
-            
 
         }
 
@@ -133,28 +118,16 @@ namespace VisualMenu
         private void LoadActionData()
         {
             Logger.Instance.LogMessage(TracingLevel.DEBUG, "Loading Action Data");
-            string webcontent = string.Empty;
+            HttpWebRequest req = (HttpWebRequest)WebRequest.Create("http://localhost:8080/enumerate/");
 
-            try
+            var response = req.GetResponse();
+            string webcontent;
+            using (var strm = new StreamReader(response.GetResponseStream()))
             {
-                HttpWebRequest req = (HttpWebRequest)WebRequest.Create("http://localhost:8080/enumerate/");
-
-                var response = req.GetResponse();
-
-                using (var strm = new StreamReader(response.GetResponseStream()))
-                {
-                    webcontent = strm.ReadToEnd();
-                }
-                this.settings.isDazLoaded = true;
-                webcontent = "{\"actionItems\" : " + webcontent + "}";
-                this.settings.actionList = JsonConvert.DeserializeObject<ActionList>((webcontent));
+                webcontent = strm.ReadToEnd();
             }
-            catch
-            {
-                Logger.Instance.LogMessage(TracingLevel.INFO, "Daz Studio Not Loaded");
-                this.settings.isDazLoaded = false;
-            }
-
+            webcontent = "{\"actionItems\" : " + webcontent + "}";
+            this.settings.actionList = JsonConvert.DeserializeObject<ActionList>((webcontent));
         }
 
         private Task SaveSettings()
