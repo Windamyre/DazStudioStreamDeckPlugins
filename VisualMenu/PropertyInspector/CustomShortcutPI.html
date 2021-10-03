@@ -8,15 +8,32 @@
     <title>Custom Daz Studio Shortcut Settings</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/barraider/streamdeck-easypi@latest/src/sdpi.css">
     <script src="https://cdn.jsdelivr.net/gh/barraider/streamdeck-easypi@latest/src/sdtools.common.js"></script>
-    
+    <script src="CustomShortcutJS.js"></script>
 </head>
 <body>
     <div class="sdpi-wrapper">
+       
+        <details class="message">
+            <summary>Requires Daz Studio plugin found at: <span class="linkspan" onclick="openEsemwy()">github.com/esemwy/StreamDeckSocket</span> </summary>
+        </details>
+
+        <div class="sdpi-wrapper" id="dvNotLoaded" style="display:none">
+            <details class="message info">
+                <summary>Unable to communicate with plug-in. </summary>
+            </details>
+        </div>
 
         <div id="dvActionListing">
             <div class="sdpi-item" id="dvAction">
                 <div class="sdpi-item-label">Action to trigger</div>
                 <select class="sdpi-item-value select sdProperty sdList" id="actionItemList" oninput="setSettings()" sdListTextProperty="text" sdListValueProperty="name" sdValueField="actionName"></select>
+            </div>
+        </div>
+        <div type="checkbox" class="sdpi-item" id="dvShowActionTitle">
+            <div class="sdpi-item-label">Show Action Title</div>
+            <div class="sdpi-item-value">
+                <input id="showActionTitle" type="checkbox" value="" class="sdProperty sdCheckbox" oninput="setSettings()">
+                <label for="showActionTitle" class="sdpi-item-label"><span></span>Only works if Title box above is blank.</label>
             </div>
         </div>
 
