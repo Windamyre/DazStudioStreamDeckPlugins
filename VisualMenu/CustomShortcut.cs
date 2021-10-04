@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 
 namespace VisualMenu
 {
-    //todo Fix PI weblink to Daz Plugin
+    //todo Make error message visible in PI when unable to communicate with Daz Plugin
     [PluginActionId("com.windamyre.daztools.customshortcut")]
 
     public class CustomShortcut : PluginBase
@@ -99,14 +99,11 @@ namespace VisualMenu
             LoadActionData();
         }
 
-
-
         public override void Dispose()
         {
             Connection.OnPropertyInspectorDidAppear -= Connection_OnPropertyInspectorDidAppear;
             Logger.Instance.LogMessage(TracingLevel.INFO, $"Destructor called");
         }
-
 
         public override void KeyPressed(KeyPayload payload)
         {
@@ -170,7 +167,6 @@ namespace VisualMenu
             {
                 await Connection.SetImageAsync(DefaultImage);
             }
-
         }
 
         public override void ReceivedGlobalSettings(ReceivedGlobalSettingsPayload payload) { }
@@ -199,6 +195,7 @@ namespace VisualMenu
             }
             catch (WebException wEx)
             {
+                Logger.Instance.LogMessage(TracingLevel.INFO, "Cannot communicate with Daz Studio or plug-in");
                 Logger.Instance.LogMessage(TracingLevel.DEBUG, wEx.Message);
                 this.settings.IsDazLoaded = false;
             }

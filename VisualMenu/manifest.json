@@ -21,7 +21,7 @@
   "Description": "Streamdeck tools for Daz Studio",
   "Icon": "Images/pluginIcon",
   "URL": "https://github.com/Windamyre",
-  "Version": "0.2",
+  "Version": "0.1.1",
   "CodePath": "CustomShortcut.exe",
   "Category": "Daz Studio Tools",
   "CategoryIcon": "Images/categoryIcon",
