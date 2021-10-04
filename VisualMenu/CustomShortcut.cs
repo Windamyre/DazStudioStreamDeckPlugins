@@ -26,11 +26,17 @@ namespace VisualMenu
                 Logger.Instance.LogMessage(TracingLevel.INFO, "Creating Default Settings");
                 PluginSettings instance = new PluginSettings();
                 instance.actionList = new ActionList();
+                instance.ActionName = string.Empty;
+                instance.ShowActionIcon = false;
+                instance.ShowActionTitle = false;
                 return instance;
             }
 
             [JsonProperty(PropertyName = "showActionTitle")]
             public bool ShowActionTitle { get; set; }
+
+            [JsonProperty(PropertyName = "showActionIcon")]
+            public bool ShowActionIcon { get; set; }
 
             [JsonProperty(PropertyName = "DazLoaded")]
             public bool IsDazLoaded { get; set; }
@@ -61,6 +67,8 @@ namespace VisualMenu
 
         #region Private Members
         private PluginSettings settings;
+        private System.Drawing.Bitmap CustomImage;
+        private System.Drawing.Bitmap DefaultImage;
         #endregion
 
         #region StreamDeckEvents
@@ -79,6 +87,7 @@ namespace VisualMenu
             {
                 this.settings = payload.Settings.ToObject<PluginSettings>();
             }
+            if (System.IO.File.Exists("./Images/pluginIcon.png")) DefaultImage = new System.Drawing.Bitmap("./Images/pluginIcon.png");
             LoadActionData();
             SaveSettings();
             Connection.OnPropertyInspectorDidAppear += Connection_OnPropertyInspectorDidAppear;
@@ -94,9 +103,7 @@ namespace VisualMenu
 
         public override void Dispose()
         {
-
             Connection.OnPropertyInspectorDidAppear -= Connection_OnPropertyInspectorDidAppear;
-
             Logger.Instance.LogMessage(TracingLevel.INFO, $"Destructor called");
         }
 
@@ -140,7 +147,6 @@ namespace VisualMenu
             Tools.AutoPopulateSettings(settings, payload.Settings);
             await SaveSettings();
 
-
             if (settings.ShowActionTitle)
             {
                 string title = settings.ActionItems.Find(x => x.name.Equals(settings.ActionName)).text;
@@ -149,6 +155,20 @@ namespace VisualMenu
             else
             {
                 await Connection.SetTitleAsync(string.Empty);
+            }
+
+            if (settings.ShowActionIcon)
+            {
+                string imageFileName = settings.ActionItems.Find(x => x.name.Equals(settings.ActionName)).icon;
+                if (System.IO.File.Exists(imageFileName))
+                {
+                    CustomImage = new System.Drawing.Bitmap(imageFileName);
+                    await Connection.SetImageAsync(CustomImage);
+                }
+            }
+            else
+            {
+                await Connection.SetImageAsync(DefaultImage);
             }
 
         }
