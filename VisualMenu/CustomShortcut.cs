@@ -14,6 +14,7 @@ using System.Threading.Tasks;
 namespace VisualMenu
 {
     //todo Make error message visible in PI when unable to communicate with Daz Plugin
+    //todo Add ability to use custom images based upon the Dz___Action name, pulling from a folder.
     [PluginActionId("com.windamyre.daztools.customshortcut")]
 
     public class CustomShortcut : PluginBase
@@ -25,7 +26,7 @@ namespace VisualMenu
             {
                 Logger.Instance.LogMessage(TracingLevel.INFO, "Creating Default Settings");
                 PluginSettings instance = new PluginSettings();
-                instance.actionList = new ActionList();
+                
                 instance.ActionName = string.Empty;
                 instance.ShowActionIcon = false;
                 instance.ShowActionTitle = false;
@@ -44,23 +45,11 @@ namespace VisualMenu
             [JsonProperty(PropertyName = "actionName")]
             public string ActionName { get; set; }
 
-            // TODO: combine actionList and ActionItems into one variable.
-            [JsonProperty(PropertyName = "actionList")]
-            public ActionList actionList
-            {
-                get;
-                set;
-            } = new ActionList();
-
             [JsonProperty(PropertyName = "actionItemList")]
-            public List<ActionList.ActionItem> ActionItems
+            public List<ActionItem> Actions
             {
-                get
-                {
-                    Logger.Instance.LogMessage(TracingLevel.DEBUG, "Settings - actionItemList");
-                    return actionList.actionItems;
-                }
-            }
+                get; set;
+            } = new List<ActionItem>();
         }
 
         #endregion
@@ -110,9 +99,24 @@ namespace VisualMenu
 
             //TODO provide feedback based on the returning data
             Logger.Instance.LogMessage(TracingLevel.INFO, "Key Pressed");
+            string RequestString= string.Empty;
+            Guid guid;
+            // Custom Actions are named with Guid so we check for that first
+            if (Guid.TryParse(settings.ActionName, out guid))
+            {
+                RequestString = $"http://localhost:8080/action/{settings.ActionName}";
+            }
+            else if (settings.ActionName.StartsWith("Dz"))
+            {
+                RequestString = $"http://localhost:8080/dazaction/{settings.ActionName}";
+            }
+            else
+            {
+                Logger.Instance.LogMessage(TracingLevel.WARN, "Unhandled action name in KeyPress event");
+            }
             try
             {
-                HttpWebRequest req = (HttpWebRequest)WebRequest.Create($"http://localhost:8080/action/{settings.ActionName}");
+                HttpWebRequest req = (HttpWebRequest)WebRequest.Create(RequestString);
                 var response = req.GetResponse();
                 string webcontent;
                 using (var strm = new StreamReader(response.GetResponseStream()))
@@ -146,7 +150,7 @@ namespace VisualMenu
 
             if (settings.ShowActionTitle)
             {
-                string title = settings.ActionItems.Find(x => x.name.Equals(settings.ActionName)).text;
+                string title = settings.Actions.Find(x => x.name.Equals(settings.ActionName)).text;
                 await Connection.SetTitleAsync(WordWrapString(title));
             }
             else
@@ -156,7 +160,7 @@ namespace VisualMenu
 
             if (settings.ShowActionIcon)
             {
-                string imageFileName = settings.ActionItems.Find(x => x.name.Equals(settings.ActionName)).icon;
+                string imageFileName = settings.Actions.Find(x => x.name.Equals(settings.ActionName)).icon;
                 if (System.IO.File.Exists(imageFileName))
                 {
                     CustomImage = new System.Drawing.Bitmap(imageFileName);
@@ -175,6 +179,9 @@ namespace VisualMenu
 
         #region Private Methods
 
+        private void CallCustomAction(string ActionName) { }
+
+
         private void LoadActionData()
         {
             Logger.Instance.LogMessage(TracingLevel.INFO, "Loading Action Data");
@@ -189,8 +196,13 @@ namespace VisualMenu
                     webcontent = strm.ReadToEnd();
                 }
                 webcontent = "{\"actionItems\" : " + webcontent + "}";
-                this.settings.actionList = JsonConvert.DeserializeObject<ActionList>((webcontent));
+                //this.settings.actionList = JsonConvert.DeserializeObject<ActionList>((webcontent));
+                List<ActionItem> items = JsonConvert.DeserializeObject<ActionList>((webcontent)).actionItems;
+                items.RemoveAll(x => x.name == "DzAction");  //items with only "DzAction" have no SDK call
+                //CarList.Sort((x, y) => DateTime.Compare(x.CreationDate, y.CreationDate));
 
+                items.Sort(CompareActions);
+                this.settings.Actions = items;
                 this.settings.IsDazLoaded = true;
             }
             catch (WebException wEx)
@@ -262,6 +274,52 @@ namespace VisualMenu
             }
         }
 
+        private static int CompareActions(ActionItem x, ActionItem y)
+        {
+            if (x==null)
+            {
+                if (y==null)
+                {
+                    return 0;
+                }
+                else
+                {
+                    return -1;
+                }
+            }
+            else
+            {
+                if (y == null)
+                {
+                    return 1;
+                }
+                else
+                {
+                    if (x.custom)
+                    {
+                        if (!y.custom)
+                        {
+                            return -11;
+                        }
+                        else
+                        {
+                            return (x.text.CompareTo(y.text));
+                        }
+                    }
+                    else
+                    {
+                        if (y.custom)
+                        {
+                            return 1;
+                        }
+                        else
+                        {
+                            return (x.text.CompareTo(y.text));
+                        }
+                    }
+                }
+            }
+        }
     }
 
     #endregion
