@@ -14,7 +14,7 @@ using System.Threading.Tasks;
 namespace VisualMenu
 {
     //todo Make error message visible in PI when unable to communicate with Daz Plugin
-    //todo Add ability to use custom images based upon the Dz___Action name, pulling from a folder.
+   
     [PluginActionId("com.windamyre.daztools.customshortcut")]
 
     public class CustomShortcut : PluginBase
@@ -26,7 +26,7 @@ namespace VisualMenu
             {
                 Logger.Instance.LogMessage(TracingLevel.INFO, "Creating Default Settings");
                 PluginSettings instance = new PluginSettings();
-                
+
                 instance.ActionName = string.Empty;
                 instance.ShowActionIcon = false;
                 instance.ShowActionTitle = false;
@@ -45,42 +45,60 @@ namespace VisualMenu
             [JsonProperty(PropertyName = "actionName")]
             public string ActionName { get; set; }
 
+            [JsonProperty(PropertyName = "iconName")]
+            public string IconName { get; set; }
             [JsonProperty(PropertyName = "actionItemList")]
             public List<ActionItem> Actions
             {
                 get; set;
             } = new List<ActionItem>();
         }
-
         #endregion
 
         #region Private Members
+
+        static private ActionList ActionListing = new ActionList();
         private PluginSettings settings;
         private System.Drawing.Bitmap CustomImage;
-        private System.Drawing.Bitmap DefaultImage;
+        static private System.Drawing.Bitmap DefaultImage = new System.Drawing.Bitmap("./Images/pluginIcon.png");
+        private bool isButtonDisplaySet = false;
         #endregion
 
         #region StreamDeckEvents
 
         public CustomShortcut(SDConnection connection, InitialPayload payload) : base(connection, payload)
         {
-
+            System.Diagnostics.Stopwatch stopwatch = new System.Diagnostics.Stopwatch();
             Logger.Instance.LogMessage(TracingLevel.INFO, "Constructor Loaded. ");
 
+
+            stopwatch.Start();
             if (payload.Settings == null || payload.Settings.Count == 0)
             {
+                System.Diagnostics.Debug.WriteLine($"1a : {stopwatch.ElapsedMilliseconds}");
                 this.settings = PluginSettings.CreateDefaultSettings();
+                LoadActionData();
                 SaveSettings();
+                System.Diagnostics.Debug.WriteLine($"1a : {stopwatch.ElapsedMilliseconds}");
             }
             else
             {
+                System.Diagnostics.Debug.WriteLine($"1b : {stopwatch.ElapsedMilliseconds}");
                 this.settings = payload.Settings.ToObject<PluginSettings>();
+                System.Diagnostics.Debug.WriteLine($"1b : {stopwatch.ElapsedMilliseconds}");
+                //todo this is the biggest lag right now.
             }
+            System.Diagnostics.Debug.WriteLine($"2 : {stopwatch.ElapsedMilliseconds}");
             if (System.IO.File.Exists("./Images/pluginIcon.png")) DefaultImage = new System.Drawing.Bitmap("./Images/pluginIcon.png");
-            LoadActionData();
+            System.Diagnostics.Debug.WriteLine($"3 : {stopwatch.ElapsedMilliseconds}");
+            LoadActionData(false);
+            System.Diagnostics.Debug.WriteLine($"4 : {stopwatch.ElapsedMilliseconds}");
             SaveSettings();
+            System.Diagnostics.Debug.WriteLine($"5 : {stopwatch.ElapsedMilliseconds}");
+            //SetButtonDisplay();
+            System.Diagnostics.Debug.WriteLine($"6 : {stopwatch.ElapsedMilliseconds}");
             Connection.OnPropertyInspectorDidAppear += Connection_OnPropertyInspectorDidAppear;
-
+            System.Diagnostics.Debug.WriteLine($"7 : {stopwatch.ElapsedMilliseconds}");
         }
 
         private void Connection_OnPropertyInspectorDidAppear(object sender, SDEventReceivedEventArgs<PropertyInspectorDidAppear> e)
@@ -90,6 +108,7 @@ namespace VisualMenu
 
         public override void Dispose()
         {
+
             Connection.OnPropertyInspectorDidAppear -= Connection_OnPropertyInspectorDidAppear;
             Logger.Instance.LogMessage(TracingLevel.INFO, $"Destructor called");
         }
@@ -99,7 +118,7 @@ namespace VisualMenu
 
             //TODO provide feedback based on the returning data
             Logger.Instance.LogMessage(TracingLevel.INFO, "Key Pressed");
-            string RequestString= string.Empty;
+            string RequestString = string.Empty;
             Guid guid;
             // Custom Actions are named with Guid so we check for that first
             if (Guid.TryParse(settings.ActionName, out guid))
@@ -139,7 +158,14 @@ namespace VisualMenu
 
         public override void KeyReleased(KeyPayload payload) { }
 
-        public override void OnTick() { }
+        public override void OnTick()
+        {
+            if (!isButtonDisplaySet)
+            {
+                SetButtonDisplay();
+                isButtonDisplaySet = true;
+            }
+        }
 
         public async override void ReceivedSettings(ReceivedSettingsPayload payload)
         {
@@ -147,6 +173,20 @@ namespace VisualMenu
 
             Tools.AutoPopulateSettings(settings, payload.Settings);
             await SaveSettings();
+            SetButtonDisplay();
+        }
+
+        public override void ReceivedGlobalSettings(ReceivedGlobalSettingsPayload payload) { }
+
+        #endregion
+
+        #region Private Methods
+
+        private void CallCustomAction(string ActionName) { }
+
+
+        private async Task SetButtonDisplay()
+        {
 
             if (settings.ShowActionTitle)
             {
@@ -160,7 +200,20 @@ namespace VisualMenu
 
             if (settings.ShowActionIcon)
             {
-                string imageFileName = settings.Actions.Find(x => x.name.Equals(settings.ActionName)).icon;
+                string imageFileName;
+
+                ActionItem actionItem = settings.Actions.Find(x => x.name.Equals(settings.ActionName));
+
+                if (actionItem.custom)
+                {
+                    imageFileName = actionItem.icon;
+                }
+                else
+                {
+                    imageFileName = $"./CustomIcons/{actionItem.name}.png";
+                }
+
+
                 if (System.IO.File.Exists(imageFileName))
                 {
                     CustomImage = new System.Drawing.Bitmap(imageFileName);
@@ -173,47 +226,53 @@ namespace VisualMenu
             }
         }
 
-        public override void ReceivedGlobalSettings(ReceivedGlobalSettingsPayload payload) { }
-
-        #endregion
-
-        #region Private Methods
-
-        private void CallCustomAction(string ActionName) { }
-
-
-        private void LoadActionData()
+        private void LoadActionData(bool LoadAllAction = true)
         {
             Logger.Instance.LogMessage(TracingLevel.INFO, "Loading Action Data");
-            try
+            TimeSpan ts = DateTime.Now.Subtract(ActionListing.LastUpdated);
+            if (ts.Minutes > 5 || ActionListing.ActionItems.Count < 1)
             {
-                HttpWebRequest req = (HttpWebRequest)WebRequest.Create("http://localhost:8080/enumerate/");
-
-                var response = req.GetResponse();
-                string webcontent;
-                using (var strm = new StreamReader(response.GetResponseStream()))
+                try
                 {
-                    webcontent = strm.ReadToEnd();
-                }
-                webcontent = "{\"actionItems\" : " + webcontent + "}";
-                //this.settings.actionList = JsonConvert.DeserializeObject<ActionList>((webcontent));
-                List<ActionItem> items = JsonConvert.DeserializeObject<ActionList>((webcontent)).actionItems;
-                items.RemoveAll(x => x.name == "DzAction");  //items with only "DzAction" have no SDK call
-                //CarList.Sort((x, y) => DateTime.Compare(x.CreationDate, y.CreationDate));
+                    Logger.Instance.LogMessage(TracingLevel.INFO, "Loading action listing from Daz Studio");
+                    HttpWebRequest req = (HttpWebRequest)WebRequest.Create("http://localhost:8080/enumerate/");
 
-                items.Sort(CompareActions);
-                this.settings.Actions = items;
+                    var response = req.GetResponse();
+                    string webcontent;
+                    using (var strm = new StreamReader(response.GetResponseStream()))
+                    {
+                        webcontent = strm.ReadToEnd();
+                    }
+                    webcontent = "{\"actionItems\" : " + webcontent + "}";
+                    //this.settings.actionList = JsonConvert.DeserializeObject<ActionList>((webcontent));
+                    List<ActionItem> items = JsonConvert.DeserializeObject<ActionList>((webcontent)).ActionItems;
+                    items.RemoveAll(x => x.name == "DzAction");  //items with only "DzAction" have no SDK call
+                                                                 //CarList.Sort((x, y) => DateTime.Compare(x.CreationDate, y.CreationDate));
+
+                    items.Sort(ActionItem.CompareActions);
+                    if (LoadAllAction) this.settings.Actions = items;
+                    this.settings.IsDazLoaded = true;
+
+                    ActionListing.ActionItems = items;
+                    ActionListing.LastUpdated = DateTime.Now;
+
+                }
+                catch (WebException wEx)
+                {
+                    Logger.Instance.LogMessage(TracingLevel.INFO, "Cannot communicate with Daz Studio or plug-in");
+                    Logger.Instance.LogMessage(TracingLevel.DEBUG, wEx.Message);
+                    this.settings.IsDazLoaded = false;
+                }
+                catch
+                {
+                    Logger.Instance.LogMessage(TracingLevel.WARN, "Unhandled error in LoadActionData");
+                }
+            }
+            else
+            {
+                Logger.Instance.LogMessage(TracingLevel.INFO, "Using static action listing");
+                if (LoadAllAction) this.settings.Actions = ActionListing.ActionItems;
                 this.settings.IsDazLoaded = true;
-            }
-            catch (WebException wEx)
-            {
-                Logger.Instance.LogMessage(TracingLevel.INFO, "Cannot communicate with Daz Studio or plug-in");
-                Logger.Instance.LogMessage(TracingLevel.DEBUG, wEx.Message);
-                this.settings.IsDazLoaded = false;
-            }
-            catch
-            {
-                Logger.Instance.LogMessage(TracingLevel.WARN, "Unhandled error in LoadActionData");
             }
         }
 
@@ -274,52 +333,7 @@ namespace VisualMenu
             }
         }
 
-        private static int CompareActions(ActionItem x, ActionItem y)
-        {
-            if (x==null)
-            {
-                if (y==null)
-                {
-                    return 0;
-                }
-                else
-                {
-                    return -1;
-                }
-            }
-            else
-            {
-                if (y == null)
-                {
-                    return 1;
-                }
-                else
-                {
-                    if (x.custom)
-                    {
-                        if (!y.custom)
-                        {
-                            return -11;
-                        }
-                        else
-                        {
-                            return (x.text.CompareTo(y.text));
-                        }
-                    }
-                    else
-                    {
-                        if (y.custom)
-                        {
-                            return 1;
-                        }
-                        else
-                        {
-                            return (x.text.CompareTo(y.text));
-                        }
-                    }
-                }
-            }
-        }
+
     }
 
     #endregion
