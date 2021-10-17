@@ -1,23 +1,38 @@
 {
   "Actions": [
     {
-      "Icon": "Images/icon",
-      "Name": "Daz Custom Shortcut",
+      "Icon": "Images/dazStudioActions",
+      "Name": "Daz Studio Actions",
       "States": [
         {
-          "Image": "Images/pluginAction",
+          "Image": "Images/dazStudioActions",
           "TitleAlignment": "middle",
           "FontSize": "10"
         }
       ],
       "SupportedInMultiActions": false,
-      "Tooltip": "Activate selected custom action",
-      "UUID": "com.windamyre.daztools.customshortcut",
+      "Tooltip": "Can activate any built-in or custom action.  Can take a little longer to load up the list.",
+      "UUID": "com.windamyre.daztools.dazstudioactions",
+      "PropertyInspectorPath": "PropertyInspector/CustomShortcutPI.html"
+    },
+    {
+      "Icon": "Images/dazCustomActions",
+      "Name": "Daz Custom Actions",
+      "States": [
+        {
+          "Image": "Images/dazCustomActions",
+          "TitleAlignment": "middle",
+          "FontSize": "10"
+        }
+      ],
+      "SupportedInMultiActions": false,
+      "Tooltip": "Limited to custom actions.",
+      "UUID": "com.windamyre.daztools.dazcustomactions",
       "PropertyInspectorPath": "PropertyInspector/CustomShortcutPI.html"
     }
   ],
   "Author": "Windamyre",
-  "Name": "Daz Studio Tools",
+  "Name": "Daz Custom Actions",
   "Description": "Streamdeck tools for Daz Studio",
   "Icon": "Images/pluginIcon",
   "URL": "https://github.com/Windamyre",

@@ -1,0 +1,4438 @@
+{"actionItems" : [
+	{
+		"name" : "DzMeshSmoothAction",
+		"text" : "Add Smoothing Modifier",
+		"custom" : false
+	},
+	{
+		"name" : "DzRemoveMeshSmoothAction",
+		"text" : "Remove Smoothing Modifier",
+		"custom" : false
+	},
+	{
+		"name" : "DzAudioAction",
+		"text" : "&Audio...",
+		"custom" : false
+	},
+	{
+		"name" : "DzDeleteAction",
+		"text" : "&Delete Selected Item(s)",
+		"custom" : false
+	},
+	{
+		"name" : "DzDeleteAllCamerasAction",
+		"text" : "Delete All &Cameras",
+		"custom" : false
+	},
+	{
+		"name" : "DzDeleteAllLightsAction",
+		"text" : "Delete All &Lights",
+		"custom" : false
+	},
+	{
+		"name" : "DzDevicesAction",
+		"text" : "&Device Settings...",
+		"custom" : false
+	},
+	{
+		"name" : "DzExitAction",
+		"text" : "E&xit",
+		"custom" : false
+	},
+	{
+		"name" : "DzExportAction",
+		"text" : "&Export...",
+		"custom" : false
+	},
+	{
+		"name" : "DzImportAction",
+		"text" : "&Import...",
+		"custom" : false
+	},
+	{
+		"name" : "DzMergeAction",
+		"text" : "&Merge...",
+		"custom" : false
+	},
+	{
+		"name" : "DzNewAction",
+		"text" : "&New",
+		"custom" : false
+	},
+	{
+		"name" : "DzOpenAction",
+		"text" : "&Open...",
+		"custom" : false
+	},
+	{
+		"name" : "DzPreferencesAction",
+		"text" : "&Preferences...",
+		"custom" : false
+	},
+	{
+		"name" : "DzRedoAction",
+		"text" : "&Redo ",
+		"custom" : false
+	},
+	{
+		"name" : "DzSaveAction",
+		"text" : "&Save...",
+		"custom" : false
+	},
+	{
+		"name" : "DzUndoAction",
+		"text" : "&Undo ",
+		"custom" : false
+	},
+	{
+		"name" : "DzClearRecentFilesAction",
+		"text" : "Clear Recent Files...",
+		"custom" : false
+	},
+	{
+		"name" : "DzFitToAction",
+		"text" : "Fit To...",
+		"custom" : false
+	},
+	{
+		"name" : "DzChangeParentAction",
+		"text" : "Change Parent(s)...",
+		"custom" : false
+	},
+	{
+		"name" : "DzRenderAction",
+		"text" : "Render",
+		"custom" : false
+	},
+	{
+		"name" : "DzRenderSettingsAction",
+		"text" : "&Render Settings...",
+		"custom" : false
+	},
+	{
+		"name" : "DzRenderSettingsShowHiddenAction",
+		"text" : "Show Hidden Properties",
+		"custom" : false
+	},
+	{
+		"name" : "DzRenderSettingsRestoreDefaultsAction",
+		"text" : "Restore Render Setting Defaults",
+		"custom" : false
+	},
+	{
+		"name" : "DzSaveLastRenderAction",
+		"text" : "Save Last &Render...",
+		"custom" : false
+	},
+	{
+		"name" : "DzDrawSettingsShowHiddenAction",
+		"text" : "Show Hidden Properties",
+		"custom" : false
+	},
+	{
+		"name" : "DzDrawSettingsRestoreDefaultsAction",
+		"text" : "Restore Draw Setting Defaults",
+		"custom" : false
+	},
+	{
+		"name" : "DzSaveLastDrawAction",
+		"text" : "Save Last &Draw...",
+		"custom" : false
+	},
+	{
+		"name" : "DzWelcomeHomeAction",
+		"text" : "&Home...",
+		"custom" : false
+	},
+	{
+		"name" : "DzQuickStartGuideAction",
+		"text" : "&QuickStart Guide...",
+		"custom" : false
+	},
+	{
+		"name" : "DzUserGuideAction",
+		"text" : "&User Guide...",
+		"custom" : false
+	},
+	{
+		"name" : "DzReferenceGuideAction",
+		"text" : "&Reference Guide...",
+		"custom" : false
+	},
+	{
+		"name" : "DzVideoTutorialsAction",
+		"text" : "&Video Tutorials...",
+		"custom" : false
+	},
+	{
+		"name" : "DzLaunchHelpBrowserAction",
+		"text" : "Help &Browser...",
+		"custom" : false
+	},
+	{
+		"name" : "DzWhatsThisAction",
+		"text" : "What's This? (Interactive Help)",
+		"custom" : false
+	},
+	{
+		"name" : "DzFrequentQuestionsAction",
+		"text" : "Frequently Asked &Questions (FAQ)...",
+		"custom" : false
+	},
+	{
+		"name" : "DzDAZTutorialsAction",
+		"text" : "&Tutorials...",
+		"custom" : false
+	},
+	{
+		"name" : "DzDAZWebSiteAction",
+		"text" : "DAZ 3D &Web Site...",
+		"custom" : false
+	},
+	{
+		"name" : "DzDAZGalleriesAction",
+		"text" : "DAZ 3D &Galleries...",
+		"custom" : false
+	},
+	{
+		"name" : "DzDAZForumsAction",
+		"text" : "DAZ 3D &Forums...",
+		"custom" : false
+	},
+	{
+		"name" : "DzDAZNewUserHelpForumAction",
+		"text" : "New User Help Forum...",
+		"custom" : false
+	},
+	{
+		"name" : "DzReportABugAction",
+		"text" : "Submit &Feedback...",
+		"custom" : false
+	},
+	{
+		"name" : "DzRegisterDAZStudioAction",
+		"text" : "Register DAZ Studio...",
+		"custom" : false
+	},
+	{
+		"name" : "DzAboutDAZStudioAction",
+		"text" : "&About DAZ Studio...",
+		"custom" : false
+	},
+	{
+		"name" : "DzAboutPluginsAction",
+		"text" : "About Installed &Plugins...",
+		"custom" : false
+	},
+	{
+		"name" : "DzAboutHardwareAction",
+		"text" : "About Your &Video Card...",
+		"custom" : false
+	},
+	{
+		"name" : "DzLogFileAction",
+		"text" : "&View Log File...",
+		"custom" : false
+	},
+	{
+		"name" : "DzDAZLoginAction",
+		"text" : "&Login...",
+		"custom" : false
+	},
+	{
+		"name" : "DzWorkOfflineAction",
+		"text" : "&Work Offline",
+		"custom" : false
+	},
+	{
+		"name" : "DzUpdateMetadataAction",
+		"text" : "Update &Metadata...",
+		"custom" : false
+	},
+	{
+		"name" : "DzDAZMyAccountAction",
+		"text" : "My &Account...",
+		"custom" : false
+	},
+	{
+		"name" : "DzDAZMyGalleryAction",
+		"text" : "My &Gallery...",
+		"custom" : false
+	},
+	{
+		"name" : "DzDAZMyCartAction",
+		"text" : "My &Cart...",
+		"custom" : false
+	},
+	{
+		"name" : "DzDAZMyWishlistAction",
+		"text" : "My &Wishlist...",
+		"custom" : false
+	},
+	{
+		"name" : "DzSelectLayoutAction",
+		"text" : "Select Layout...",
+		"custom" : false
+	},
+	{
+		"name" : "DzSaveLayoutAction",
+		"text" : "Save Layout As...",
+		"custom" : false
+	},
+	{
+		"name" : "DzDeleteLayoutAction",
+		"text" : "Delete Layout(s)...",
+		"custom" : false
+	},
+	{
+		"name" : "DzCustomColorsAction",
+		"text" : "&Customize Style...",
+		"custom" : false
+	},
+	{
+		"name" : "DzDeleteStyleAction",
+		"text" : "Delete Style(s)...",
+		"custom" : false
+	},
+	{
+		"name" : "DzSaveStyleAction",
+		"text" : "Save Style As...",
+		"custom" : false
+	},
+	{
+		"name" : "DzSelectStyleAction",
+		"text" : "Select Style...",
+		"custom" : false
+	},
+	{
+		"name" : "DzActivityAction0",
+		"text" : "Show Activity 0",
+		"custom" : false
+	},
+	{
+		"name" : "DzActivityAction1",
+		"text" : "Show Activity 1",
+		"custom" : false
+	},
+	{
+		"name" : "DzActivityAction2",
+		"text" : "Show Activity 2",
+		"custom" : false
+	},
+	{
+		"name" : "DzActivityAction3",
+		"text" : "Show Activity 3",
+		"custom" : false
+	},
+	{
+		"name" : "DzActivityAction4",
+		"text" : "Show Activity 4",
+		"custom" : false
+	},
+	{
+		"name" : "DzActivityAction5",
+		"text" : "Show Activity 5",
+		"custom" : false
+	},
+	{
+		"name" : "DzActivityAction6",
+		"text" : "Show Activity 6",
+		"custom" : false
+	},
+	{
+		"name" : "DzActivityAction7",
+		"text" : "Show Activity 7",
+		"custom" : false
+	},
+	{
+		"name" : "DzActivityAction8",
+		"text" : "Show Activity 8",
+		"custom" : false
+	},
+	{
+		"name" : "DzActivityAction9",
+		"text" : "Show Activity 9",
+		"custom" : false
+	},
+	{
+		"name" : "Dz2Bottom1TopAction",
+		"text" : "2 Bottom, 1 Top",
+		"custom" : false
+	},
+	{
+		"name" : "Dz2Left1RightAction",
+		"text" : "2 Left, 1 Right",
+		"custom" : false
+	},
+	{
+		"name" : "Dz2Right1LeftAction",
+		"text" : "2 Right, 1 Left",
+		"custom" : false
+	},
+	{
+		"name" : "Dz2Top1BottomAction",
+		"text" : "2 Top, 1 Bottom",
+		"custom" : false
+	},
+	{
+		"name" : "Dz3Bottom1TopAction",
+		"text" : "3 Bottom, 1 Top",
+		"custom" : false
+	},
+	{
+		"name" : "Dz3Left1RightAction",
+		"text" : "3 Left, 1 Right",
+		"custom" : false
+	},
+	{
+		"name" : "Dz3Right1LeftAction",
+		"text" : "3 Right, 1 Left",
+		"custom" : false
+	},
+	{
+		"name" : "Dz3Top1BottomAction",
+		"text" : "3 Top, 1 Bottom",
+		"custom" : false
+	},
+	{
+		"name" : "DzBackViewAction",
+		"text" : "Back View",
+		"custom" : false
+	},
+	{
+		"name" : "DzBottomViewAction",
+		"text" : "Bottom View",
+		"custom" : false
+	},
+	{
+		"name" : "DzFourViewsAction",
+		"text" : "Four Views",
+		"custom" : false
+	},
+	{
+		"name" : "DzFrontViewAction",
+		"text" : "Front View",
+		"custom" : false
+	},
+	{
+		"name" : "DzLeftViewAction",
+		"text" : "Left View",
+		"custom" : false
+	},
+	{
+		"name" : "DzPerspectiveViewAction",
+		"text" : "Perspective View",
+		"custom" : false
+	},
+	{
+		"name" : "DzRightViewAction",
+		"text" : "Right View",
+		"custom" : false
+	},
+	{
+		"name" : "DzSideBySideAction",
+		"text" : "Side by Side",
+		"custom" : false
+	},
+	{
+		"name" : "DzSingleViewAction",
+		"text" : "Single View",
+		"custom" : false
+	},
+	{
+		"name" : "DzTopAndBottomAction",
+		"text" : "Top and Bottom",
+		"custom" : false
+	},
+	{
+		"name" : "DzTopViewAction",
+		"text" : "Top View",
+		"custom" : false
+	},
+	{
+		"name" : "DzWireBoxStyleAction",
+		"text" : "Wire Bounding Box",
+		"custom" : false
+	},
+	{
+		"name" : "DzSolidBoxStyleAction",
+		"text" : "Solid Bounding Box",
+		"custom" : false
+	},
+	{
+		"name" : "DzWireframeStyleAction",
+		"text" : "Wireframe",
+		"custom" : false
+	},
+	{
+		"name" : "DzHiddenLineStyleAction",
+		"text" : "Hidden Line",
+		"custom" : false
+	},
+	{
+		"name" : "DzLitWireframeStyleAction",
+		"text" : "Lit Wireframe",
+		"custom" : false
+	},
+	{
+		"name" : "DzWireShadedStyleAction",
+		"text" : "Wire Shaded",
+		"custom" : false
+	},
+	{
+		"name" : "DzSmoothShadedStyleAction",
+		"text" : "Smooth Shaded",
+		"custom" : false
+	},
+	{
+		"name" : "DzTexturedStyleAction",
+		"text" : "Texture Shaded",
+		"custom" : false
+	},
+	{
+		"name" : "DzWireTexturedStyleAction",
+		"text" : "Wire Texture Shaded",
+		"custom" : false
+	},
+	{
+		"name" : "DzCartoonStyleAction",
+		"text" : "Cartoon Shaded",
+		"custom" : false
+	},
+	{
+		"name" : "DzOffScreenPaneGroupsAction",
+		"text" : "Off Screen Pane (Tab) Groups...",
+		"custom" : false
+	},
+	{
+		"name" : "DzOffScreenToolBarsAction",
+		"text" : "Off Screen Tool Bars...",
+		"custom" : false
+	},
+	{
+		"name" : "DzLockUIAction",
+		"text" : "Lock Docking/Undocking",
+		"custom" : false
+	},
+	{
+		"name" : "DzToggleActivityBarAction",
+		"text" : "Enable Activity Bar",
+		"custom" : false
+	},
+	{
+		"name" : "DzToggleOrientTabsAlongTopAction",
+		"text" : "Orient Tabs Along Top",
+		"custom" : false
+	},
+	{
+		"name" : "DzToggleLessonStripShowAction",
+		"text" : "Enable Lesson Strip",
+		"custom" : false
+	},
+	{
+		"name" : "DzUpdateAndMergeMenusAction",
+		"text" : "Update and Merge Menus",
+		"custom" : false
+	},
+	{
+		"name" : "DzAlwaysOnTopAction",
+		"text" : "Always on Top",
+		"custom" : false
+	},
+	{
+		"name" : "DzFullScreenAction",
+		"text" : "Full Screen Mode",
+		"custom" : false
+	},
+	{
+		"name" : "DzPreviewLightsAction",
+		"text" : "Preview Lights",
+		"custom" : false
+	},
+	{
+		"name" : "DzLessonRecordAction",
+		"text" : "Lesson Record",
+		"custom" : false
+	},
+	{
+		"name" : "DzIKClearPinAction",
+		"text" : "Unpin Selected",
+		"custom" : false
+	},
+	{
+		"name" : "DzIKClearPinsAction",
+		"text" : "Unpin All",
+		"custom" : false
+	},
+	{
+		"name" : "DzIKConvertToFKAction",
+		"text" : "Bake Figure IK to FK",
+		"custom" : false
+	},
+	{
+		"name" : "DzIKEnableHardPinsAction",
+		"text" : "Hard Pins",
+		"custom" : false
+	},
+	{
+		"name" : "DzIKEnableIKAction",
+		"text" : "Enable IK",
+		"custom" : false
+	},
+	{
+		"name" : "DzIKEnablePinsAction",
+		"text" : "Enable Pins",
+		"custom" : false
+	},
+	{
+		"name" : "DzIKPinBothAction",
+		"text" : "Pin Rot/Tran",
+		"custom" : false
+	},
+	{
+		"name" : "DzIKPinRotationAction",
+		"text" : "Pin Rotation",
+		"custom" : false
+	},
+	{
+		"name" : "DzIKPinTranslationAction",
+		"text" : "Pin Translation",
+		"custom" : false
+	},
+	{
+		"name" : "DzViewControlKeyNavAction",
+		"text" : "Keyboard Navigation",
+		"custom" : false
+	},
+	{
+		"name" : "DzDollyCameraUpAction",
+		"text" : "Move Up",
+		"custom" : false
+	},
+	{
+		"name" : "DzDollyCameraDownAction",
+		"text" : "Move Down",
+		"custom" : false
+	},
+	{
+		"name" : "DzDollyCameraForwardAction",
+		"text" : "Move Forward",
+		"custom" : false
+	},
+	{
+		"name" : "DzDollyCameraBackAction",
+		"text" : "Move Back",
+		"custom" : false
+	},
+	{
+		"name" : "DzDollyCameraLeftAction",
+		"text" : "Move Left",
+		"custom" : false
+	},
+	{
+		"name" : "DzDollyCameraRightAction",
+		"text" : "Move Right",
+		"custom" : false
+	},
+	{
+		"name" : "DzIncreaseCameraDollyFactorAction",
+		"text" : "Increase Move Speed",
+		"custom" : false
+	},
+	{
+		"name" : "DzDecreaseCameraDollyFactorAction",
+		"text" : "Decrease Move Speed",
+		"custom" : false
+	},
+	{
+		"name" : "DzResetCameraDollyFactorAction",
+		"text" : "Reset Move Speed",
+		"custom" : false
+	},
+	{
+		"name" : "DzRotateCameraUpAction",
+		"text" : "Look Up (Pitch +)",
+		"custom" : false
+	},
+	{
+		"name" : "DzRotateCameraDownAction",
+		"text" : "Look Down (Pitch -)",
+		"custom" : false
+	},
+	{
+		"name" : "DzRotateCameraLeftAction",
+		"text" : "Look Left (Yaw -)",
+		"custom" : false
+	},
+	{
+		"name" : "DzRotateCameraRightAction",
+		"text" : "Look Right (Yaw +)",
+		"custom" : false
+	},
+	{
+		"name" : "DzBankCameraLeftAction",
+		"text" : "Bank Left (Roll -)",
+		"custom" : false
+	},
+	{
+		"name" : "DzBankCameraRightAction",
+		"text" : "Bank Right (Roll +)",
+		"custom" : false
+	},
+	{
+		"name" : "DzIncreaseCameraRotateFactorAction",
+		"text" : "Increase Rotation Speed",
+		"custom" : false
+	},
+	{
+		"name" : "DzDecreaseCameraRotateFactorAction",
+		"text" : "Decrease Rotation Speed",
+		"custom" : false
+	},
+	{
+		"name" : "DzResetCameraRotateFactorAction",
+		"text" : "Reset Rotation Speed",
+		"custom" : false
+	},
+	{
+		"name" : "DzLevelCameraRotateAction",
+		"text" : "Level (Pitch/Roll)",
+		"custom" : false
+	},
+	{
+		"name" : "DzIncreaseCameraLevelFactorAction",
+		"text" : "Increase Leveling Speed",
+		"custom" : false
+	},
+	{
+		"name" : "DzDecreaseCameraLevelFactorAction",
+		"text" : "Decrease Leveling Speed",
+		"custom" : false
+	},
+	{
+		"name" : "DzResetCameraLevelFactorAction",
+		"text" : "Reset Leveling Speed",
+		"custom" : false
+	},
+	{
+		"name" : "DzLevelCameraSnapAction",
+		"text" : "Snap Level",
+		"custom" : false
+	},
+	{
+		"name" : "DzAimCameraAction",
+		"text" : "Aim at Selection",
+		"custom" : false
+	},
+	{
+		"name" : "DzFrameCameraAction",
+		"text" : "Frame Selection",
+		"custom" : false
+	},
+	{
+		"name" : "DzResetCameraAction",
+		"text" : "Reset the Camera",
+		"custom" : false
+	},
+	{
+		"name" : "DzPointAtAction",
+		"text" : "Aim At",
+		"custom" : false
+	},
+	{
+		"name" : "DzNextToolAction",
+		"text" : "Next Tool",
+		"custom" : false
+	},
+	{
+		"name" : "DzPreviousToolAction",
+		"text" : "Previous Tool",
+		"custom" : false
+	},
+	{
+		"name" : "DzSceneNavigatorToolAction",
+		"text" : "Scene Navigator",
+		"custom" : false
+	},
+	{
+		"name" : "DzPickToolAction",
+		"text" : "Node Selection",
+		"custom" : false
+	},
+	{
+		"name" : "DzUniversalToolAction",
+		"text" : "Universal",
+		"custom" : false
+	},
+	{
+		"name" : "DzRotateToolAction",
+		"text" : "Rotate",
+		"custom" : false
+	},
+	{
+		"name" : "DzTranslateToolAction",
+		"text" : "Translate",
+		"custom" : false
+	},
+	{
+		"name" : "DzScaleToolAction",
+		"text" : "Scale",
+		"custom" : false
+	},
+	{
+		"name" : "DzMaterialPickToolAction",
+		"text" : "Surface Selection",
+		"custom" : false
+	},
+	{
+		"name" : "Dz3DBrushEaseInAction",
+		"text" : "Ease-In",
+		"custom" : false
+	},
+	{
+		"name" : "Dz3DBrushEaseInOutAction",
+		"text" : "Ease-In / Ease-Out",
+		"custom" : false
+	},
+	{
+		"name" : "Dz3DBrushEaseOutAction",
+		"text" : "Ease-Out",
+		"custom" : false
+	},
+	{
+		"name" : "Dz3DBrushGrad2Action",
+		"text" : "2 Handles",
+		"custom" : false
+	},
+	{
+		"name" : "Dz3DBrushGrad3Action",
+		"text" : "3 Handles",
+		"custom" : false
+	},
+	{
+		"name" : "Dz3DBrushGrad4Action",
+		"text" : "4 Handles",
+		"custom" : false
+	},
+	{
+		"name" : "Dz3DBrushGradEaseInAction",
+		"text" : "Ease-In",
+		"custom" : false
+	},
+	{
+		"name" : "Dz3DBrushGradEaseInOutAction",
+		"text" : "Ease-In / Ease-Out",
+		"custom" : false
+	},
+	{
+		"name" : "Dz3DBrushGradEaseOutAction",
+		"text" : "Ease-Out",
+		"custom" : false
+	},
+	{
+		"name" : "Dz3DBrushGradientApplyAction",
+		"text" : "Apply Gradient",
+		"custom" : false
+	},
+	{
+		"name" : "Dz3DBrushGradientFlipAction",
+		"text" : "Flip Gradient",
+		"custom" : false
+	},
+	{
+		"name" : "Dz3DBrushGradientModeAction",
+		"text" : "Directional Gradient",
+		"custom" : false
+	},
+	{
+		"name" : "Dz3DBrushGradientSnapAction",
+		"text" : "Snap Gradient to Node",
+		"custom" : false
+	},
+	{
+		"name" : "Dz3DBrushGradLinearAction",
+		"text" : "Linear Falloff",
+		"custom" : false
+	},
+	{
+		"name" : "Dz3DBrushLinearAction",
+		"text" : "Linear Falloff",
+		"custom" : false
+	},
+	{
+		"name" : "Dz3DBrushPaintModeAction",
+		"text" : "Paint Brush",
+		"custom" : false
+	},
+	{
+		"name" : "Dz3DBrushSelectModeAction",
+		"text" : "Geometry Selection",
+		"custom" : false
+	},
+	{
+		"name" : "Dz3DBrushSmoothModeAction",
+		"text" : "Smooth Brush",
+		"custom" : false
+	},
+	{
+		"name" : "Dz3DBrushSphereGradientModeAction",
+		"text" : "Sphere Gradient",
+		"custom" : false
+	},
+	{
+		"name" : "Dz3DBrushFacetSelectionTypeAction",
+		"text" : "Polygon Selection",
+		"custom" : false
+	},
+	{
+		"name" : "Dz3DBrushEdgeSelectionTypeAction",
+		"text" : "Edge Selection",
+		"custom" : false
+	},
+	{
+		"name" : "Dz3DBrushVertexSelectionTypeAction",
+		"text" : "Vertex Selection",
+		"custom" : false
+	},
+	{
+		"name" : "DzWeightMapBrushColorsAction",
+		"text" : "Edit Weight Display...",
+		"custom" : false
+	},
+	{
+		"name" : "DzWeightMapBrushCopyAction",
+		"text" : "Copy Weights",
+		"custom" : false
+	},
+	{
+		"name" : "DzWeightMapBrushDisplayBoolAction",
+		"text" : "Draw Surface With Weight",
+		"custom" : false
+	},
+	{
+		"name" : "DzWeightMapBrushDisplayPointsAction",
+		"text" : "Draw Weighted Vertices",
+		"custom" : false
+	},
+	{
+		"name" : "DzWeightMapBrushDisplayOffAction",
+		"text" : "Don't Draw Weights",
+		"custom" : false
+	},
+	{
+		"name" : "DzWeightMapBrushDisplayValueAction",
+		"text" : "Draw Weighted Surface",
+		"custom" : false
+	},
+	{
+		"name" : "DzWeightMapBrushFillAction",
+		"text" : "Fill Selected...",
+		"custom" : false
+	},
+	{
+		"name" : "DzWeightMapBrushPasteAction",
+		"text" : "Paste Weights",
+		"custom" : false
+	},
+	{
+		"name" : "DzWeightMapBrushSmoothAction",
+		"text" : "Smooth Selected...",
+		"custom" : false
+	},
+	{
+		"name" : "DzWeightMapBrushAttenuateAction",
+		"text" : "Attenuate Selected...",
+		"custom" : false
+	},
+	{
+		"name" : "DzFacetDragSelectionAction",
+		"text" : "Drag Selection",
+		"custom" : false
+	},
+	{
+		"name" : "DzFacetHideAllAction",
+		"text" : "Hide All Polygons",
+		"custom" : false
+	},
+	{
+		"name" : "DzFacetHideInvertAction",
+		"text" : "Invert Hidden Polygons",
+		"custom" : false
+	},
+	{
+		"name" : "DzFacetHideSelectedAction",
+		"text" : "Hide Selected Polygon(s)",
+		"custom" : false
+	},
+	{
+		"name" : "DzFacetHideUnSelectedAction",
+		"text" : "Hide Un-Selected Polygon(s)",
+		"custom" : false
+	},
+	{
+		"name" : "DzFacetLassoSelectionAction",
+		"text" : "Lasso Selection",
+		"custom" : false
+	},
+	{
+		"name" : "DzFacetLockAllAction",
+		"text" : "Lock All Polygons",
+		"custom" : false
+	},
+	{
+		"name" : "DzFacetLockInvertAction",
+		"text" : "Invert Locked Polygon(s)",
+		"custom" : false
+	},
+	{
+		"name" : "DzFacetLockSelectedAction",
+		"text" : "Lock Selected Polygon(s)",
+		"custom" : false
+	},
+	{
+		"name" : "DzFacetRectangleSelectionAction",
+		"text" : "Marquee Selection",
+		"custom" : false
+	},
+	{
+		"name" : "DzFacetSelAllAction",
+		"text" : "Select All",
+		"custom" : false
+	},
+	{
+		"name" : "DzFacetSelClearAction",
+		"text" : "Clear Selection",
+		"custom" : false
+	},
+	{
+		"name" : "DzFacetSelConnectedAction",
+		"text" : "Select Connected",
+		"custom" : false
+	},
+	{
+		"name" : "DzFacetSelGrowAction",
+		"text" : "Grow Selection",
+		"custom" : false
+	},
+	{
+		"name" : "DzFacetSelInvertAction",
+		"text" : "Invert Selection",
+		"custom" : false
+	},
+	{
+		"name" : "DzFacetSelShrinkAction",
+		"text" : "Shrink Selection",
+		"custom" : false
+	},
+	{
+		"name" : "DzFacetShowAllAction",
+		"text" : "Show All Polygons",
+		"custom" : false
+	},
+	{
+		"name" : "DzFacetUnlockAllAction",
+		"text" : "Unlock All Polygons",
+		"custom" : false
+	},
+	{
+		"name" : "DzFacetSelReverseWindingOrderAction",
+		"text" : "Flip Normal of Selected Polygon(s)",
+		"custom" : false
+	},
+	{
+		"name" : "DzFacetSelRotateWindingOrderAction",
+		"text" : "Rotate Triangulation of Selected Polygon(s)",
+		"custom" : false
+	},
+	{
+		"name" : "DzFacetSelFacetLoopAction",
+		"text" : "Select Loop",
+		"custom" : false
+	},
+	{
+		"name" : "DzFacetSelBoundaryAction",
+		"text" : "Select Boundary",
+		"custom" : false
+	},
+	{
+		"name" : "DzFacetSelConvertToFacetSelectionAction",
+		"text" : "Convert to Polygon Selection",
+		"custom" : false
+	},
+	{
+		"name" : "DzFacetSelConvertToEdgeSelectionAction",
+		"text" : "Convert to Edge Selection",
+		"custom" : false
+	},
+	{
+		"name" : "DzFacetSelConvertToVertexSelectionAction",
+		"text" : "Convert to Vertex Selection",
+		"custom" : false
+	},
+	{
+		"name" : "DzFacetSelectIslandAction",
+		"text" : "Select Geometry Islands...",
+		"custom" : false
+	},
+	{
+		"name" : "DzFacetDeselectIslandAction",
+		"text" : "Deselect Geometry Islands...",
+		"custom" : false
+	},
+	{
+		"name" : "DzSimpleWorkflowActorsModeAction",
+		"text" : "Actors",
+		"custom" : false
+	},
+	{
+		"name" : "DzSimpleWorkflowHairModeAction",
+		"text" : "Hair",
+		"custom" : false
+	},
+	{
+		"name" : "DzSimpleWorkflowWardrobeModeAction",
+		"text" : "Wardrobe",
+		"custom" : false
+	},
+	{
+		"name" : "DzMyFaceAction",
+		"text" : "My Face",
+		"custom" : false
+	},
+	{
+		"name" : "DzRandomizeShapeAction",
+		"text" : "Randomize",
+		"custom" : false
+	},
+	{
+		"name" : "DzHelpPaneAction",
+		"text" : "Help",
+		"custom" : false
+	},
+	{
+		"name" : "DzRenderPaneAction",
+		"text" : "Render Settings",
+		"custom" : false
+	},
+	{
+		"name" : "DzScenePaneAction",
+		"text" : "Scene",
+		"custom" : false
+	},
+	{
+		"name" : "DzSurfacesPaneAction",
+		"text" : "Surfaces",
+		"custom" : false
+	},
+	{
+		"name" : "DzViewPaneAction",
+		"text" : "View",
+		"custom" : false
+	},
+	{
+		"name" : "DzWidgetMapPaneAction",
+		"text" : "UI Widget Map",
+		"custom" : false
+	},
+	{
+		"name" : "DzViewportMgrPaneAction",
+		"text" : "Viewport",
+		"custom" : false
+	},
+	{
+		"name" : "DzAuxViewportPaneAction",
+		"text" : "Aux Viewport",
+		"custom" : false
+	},
+	{
+		"name" : "DzEnvironmentPaneAction",
+		"text" : "Environment",
+		"custom" : false
+	},
+	{
+		"name" : "DzDrawPaneAction",
+		"text" : "Draw Settings",
+		"custom" : false
+	},
+	{
+		"name" : "DzSimulationSettingsPaneAction",
+		"text" : "Simulation Settings",
+		"custom" : false
+	},
+	{
+		"name" : "DzHPCloseAllAction",
+		"text" : "Collapse All",
+		"custom" : false
+	},
+	{
+		"name" : "DzHPCloseSelectedAction",
+		"text" : "Collapse Selected",
+		"custom" : false
+	},
+	{
+		"name" : "DzHPCloseFromSelectedAction",
+		"text" : "Collapse from Selected",
+		"custom" : false
+	},
+	{
+		"name" : "DzHPExpandAllAction",
+		"text" : "Expand All",
+		"custom" : false
+	},
+	{
+		"name" : "DzHPExpandSelectedAction",
+		"text" : "Expand Selected",
+		"custom" : false
+	},
+	{
+		"name" : "DzHPExpandFromSelectedAction",
+		"text" : "Expand from Selected",
+		"custom" : false
+	},
+	{
+		"name" : "DzHPInvertSelectionAction",
+		"text" : "Invert Selection",
+		"custom" : false
+	},
+	{
+		"name" : "DzHPNoSortAction",
+		"text" : "Do Not Sort",
+		"custom" : false
+	},
+	{
+		"name" : "DzHPSelectAllAction",
+		"text" : "Select All",
+		"custom" : false
+	},
+	{
+		"name" : "DzHPClearSelectionAction",
+		"text" : "Clear Selection",
+		"custom" : false
+	},
+	{
+		"name" : "DzHPSelectChildrenAction",
+		"text" : "Select Children",
+		"custom" : false
+	},
+	{
+		"name" : "DzHPDeselectChildrenAction",
+		"text" : "Deselect Children",
+		"custom" : false
+	},
+	{
+		"name" : "DzHPSelectCamerasAction",
+		"text" : "Select All Cameras",
+		"custom" : false
+	},
+	{
+		"name" : "DzHPSelectDFormsAction",
+		"text" : "Select All DForms",
+		"custom" : false
+	},
+	{
+		"name" : "DzHPSelectFiguresAction",
+		"text" : "Select All Figures",
+		"custom" : false
+	},
+	{
+		"name" : "DzHPSelectLightsAction",
+		"text" : "Select All Lights",
+		"custom" : false
+	},
+	{
+		"name" : "DzHPSelectObjectsAction",
+		"text" : "Select All Objects",
+		"custom" : false
+	},
+	{
+		"name" : "DzHPShowCamerasAction",
+		"text" : "Show Cameras",
+		"custom" : false
+	},
+	{
+		"name" : "DzHPShowDFormsAction",
+		"text" : "Show DForms",
+		"custom" : false
+	},
+	{
+		"name" : "DzHPShowFiguresAction",
+		"text" : "Show Figures",
+		"custom" : false
+	},
+	{
+		"name" : "DzHPShowHiddenAction",
+		"text" : "Show Hidden Nodes",
+		"custom" : false
+	},
+	{
+		"name" : "DzHPShowIKAction",
+		"text" : "Show IK Chains",
+		"custom" : false
+	},
+	{
+		"name" : "DzHPShowLightsAction",
+		"text" : "Show Lights",
+		"custom" : false
+	},
+	{
+		"name" : "DzHPShowObjectsAction",
+		"text" : "Show Objects",
+		"custom" : false
+	},
+	{
+		"name" : "DzHPSortAscendAction",
+		"text" : "Sort Ascending",
+		"custom" : false
+	},
+	{
+		"name" : "DzHPSortDescendAction",
+		"text" : "Sort Descending",
+		"custom" : false
+	},
+	{
+		"name" : "DzHPTogglePIPAction",
+		"text" : "Parent Items In Place",
+		"custom" : false
+	},
+	{
+		"name" : "DzHPSceneIDEditorAction",
+		"text" : "Scene Identification...",
+		"custom" : false
+	},
+	{
+		"name" : "DzHPNodeElementDataEditorAction",
+		"text" : "Element Data...",
+		"custom" : false
+	},
+	{
+		"name" : "DzHPLockBoneOrderAction",
+		"text" : "Lock Bone Order",
+		"custom" : false
+	},
+	{
+		"name" : "DzHPOrderNodesMoveUpAction",
+		"text" : "Selected Children Up",
+		"custom" : false
+	},
+	{
+		"name" : "DzHPOrderNodesMoveToTopAction",
+		"text" : "Selected Children To Top",
+		"custom" : false
+	},
+	{
+		"name" : "DzHPOrderNodesMoveDownAction",
+		"text" : "Selected Children Down",
+		"custom" : false
+	},
+	{
+		"name" : "DzHPOrderNodesMoveToBottomAction",
+		"text" : "Selected Children To Bottom",
+		"custom" : false
+	},
+	{
+		"name" : "DzClearPropertyNewAction",
+		"text" : "Mark All As Seen",
+		"custom" : false
+	},
+	{
+		"name" : "DzCLDirectoryManagerAction",
+		"text" : "Content Directory Manager...",
+		"custom" : false
+	},
+	{
+		"name" : "DzCLDatabaseMigrationAction",
+		"text" : "Migrate Old Content Database...",
+		"custom" : false
+	},
+	{
+		"name" : "DzCLContentSearchAction",
+		"text" : "Search for Content...",
+		"custom" : false
+	},
+	{
+		"name" : "DzCLEditPreferencesAction",
+		"text" : "Edit Content Preferences...",
+		"custom" : false
+	},
+	{
+		"name" : "DzCLStopCMSAction",
+		"text" : "Stop CMS...",
+		"custom" : false
+	},
+	{
+		"name" : "DzCLStartCMSAction",
+		"text" : "Start CMS",
+		"custom" : false
+	},
+	{
+		"name" : "DzCLExportProductMetadataAction",
+		"text" : "Export Product Metadata...",
+		"custom" : false
+	},
+	{
+		"name" : "DzCLInstallOfflinePackagesAction",
+		"text" : "Install Offline Products...",
+		"custom" : false
+	},
+	{
+		"name" : "DzCRMAlwaysReplaceContentAction",
+		"text" : "Always Replace Items",
+		"custom" : false
+	},
+	{
+		"name" : "DzCRMAskToReplaceContentAction",
+		"text" : "Ask to Replace Items",
+		"custom" : false
+	},
+	{
+		"name" : "DzCRMNeverReplaceContentAction",
+		"text" : "Never Replace Items",
+		"custom" : false
+	},
+	{
+		"name" : "DzRLDirectoryManagerAction",
+		"text" : "Render Directory Manager...",
+		"custom" : false
+	},
+	{
+		"name" : "DzSRFShowHiddenAction",
+		"text" : "Show Hidden Properties",
+		"custom" : false
+	},
+	{
+		"name" : "DzSRFDisplaySelectedAction",
+		"text" : "Display Selected Item(s) Only",
+		"custom" : false
+	},
+	{
+		"name" : "DzSRFDisplaySelectedWithFitAction",
+		"text" : "Display Selected and Fitted Item(s)",
+		"custom" : false
+	},
+	{
+		"name" : "DzSRFDisplayAllAction",
+		"text" : "Display All Items",
+		"custom" : false
+	},
+	{
+		"name" : "DzCopyMaterialAction",
+		"text" : "Copy Selected Surface(s)",
+		"custom" : false
+	},
+	{
+		"name" : "DzPasteMaterialAction",
+		"text" : "Paste to Selected Surface(s)",
+		"custom" : false
+	},
+	{
+		"name" : "DzSRFExpandAllAction",
+		"text" : "Expand All",
+		"custom" : false
+	},
+	{
+		"name" : "DzSRFExpandAllSelectedAction",
+		"text" : "Expand Selected",
+		"custom" : false
+	},
+	{
+		"name" : "DzSRFCollapseAllAction",
+		"text" : "Collapse All",
+		"custom" : false
+	},
+	{
+		"name" : "DzSRFCollapseAllSelectedAction",
+		"text" : "Collapse Selected",
+		"custom" : false
+	},
+	{
+		"name" : "DzSRFLockSelectedAction",
+		"text" : "Lock Selected Properties",
+		"custom" : false
+	},
+	{
+		"name" : "DzSRFUnLockSelectedAction",
+		"text" : "UnLock Selected Properties",
+		"custom" : false
+	},
+	{
+		"name" : "DzSRFHideSelectedAction",
+		"text" : "Hide Selected Properties",
+		"custom" : false
+	},
+	{
+		"name" : "DzSRFUnHideSelectedAction",
+		"text" : "UnHide Selected Properties",
+		"custom" : false
+	},
+	{
+		"name" : "DzEditMaterialSelectionSetsAction",
+		"text" : "Edit Surface Selection Set(s)...",
+		"custom" : false
+	},
+	{
+		"name" : "DzAutoRefreshImagesAction",
+		"text" : "Automatically Refresh Images",
+		"custom" : false
+	},
+	{
+		"name" : "DzLoadUVSetAction",
+		"text" : "Load UV Set...",
+		"custom" : false
+	},
+	{
+		"name" : "DzRefreshImagesAction",
+		"text" : "Refresh Images",
+		"custom" : false
+	},
+	{
+		"name" : "DzSimulateAction",
+		"text" : "Simulate",
+		"custom" : false
+	},
+	{
+		"name" : "DzSimulateSelectedAction",
+		"text" : "Simulate Selected",
+		"custom" : false
+	},
+	{
+		"name" : "DzClearSimulationAction",
+		"text" : "Clear Simulation Data",
+		"custom" : false
+	},
+	{
+		"name" : "DzSimulationSettingsShowHiddenAction",
+		"text" : "Show Hidden Properties",
+		"custom" : false
+	},
+	{
+		"name" : "DzSimulationSettingsRestoreDefaultsAction",
+		"text" : "Restore Simulation Setting Defaults",
+		"custom" : false
+	},
+	{
+		"name" : "DzClearKeysFigureAction",
+		"text" : "Clear Figure",
+		"custom" : false
+	},
+	{
+		"name" : "DzClearKeysFigureShapeAction",
+		"text" : "Clear Figure Shape",
+		"custom" : false
+	},
+	{
+		"name" : "DzClearKeysFigurePoseAction",
+		"text" : "Clear Figure Pose",
+		"custom" : false
+	},
+	{
+		"name" : "DzClearKeysPoseAction",
+		"text" : "Clear Selected Item(s) Pose",
+		"custom" : false
+	},
+	{
+		"name" : "DzClearKeysSelectedItemsAction",
+		"text" : "Clear Selected Item(s)",
+		"custom" : false
+	},
+	{
+		"name" : "DzClearKeysShapeAction",
+		"text" : "Clear Selected Item(s) Shape",
+		"custom" : false
+	},
+	{
+		"name" : "DzCollapseAllAction",
+		"text" : "Collapse All",
+		"custom" : false
+	},
+	{
+		"name" : "DzCollapseAllSelectedAction",
+		"text" : "Collapse Selected",
+		"custom" : false
+	},
+	{
+		"name" : "DzCopyFigureAction",
+		"text" : "Copy Figure",
+		"custom" : false
+	},
+	{
+		"name" : "DzCopyNodeAction",
+		"text" : "Copy Selected Item(s)",
+		"custom" : false
+	},
+	{
+		"name" : "DzExpandAllAction",
+		"text" : "Expand All",
+		"custom" : false
+	},
+	{
+		"name" : "DzExpandAllSelectedAction",
+		"text" : "Expand Selected",
+		"custom" : false
+	},
+	{
+		"name" : "DzHideSelectedAction",
+		"text" : "Hide Selected",
+		"custom" : false
+	},
+	{
+		"name" : "DzLimitsOffAction",
+		"text" : "Limits Off (Rotation)",
+		"custom" : false
+	},
+	{
+		"name" : "DzLimitsOnAction",
+		"text" : "Limits On (Rotation)",
+		"custom" : false
+	},
+	{
+		"name" : "DzLockShapeAction",
+		"text" : "Lock Selected Node(s) Shape",
+		"custom" : false
+	},
+	{
+		"name" : "DzLockNodeAction",
+		"text" : "Lock Selected Node(s)",
+		"custom" : false
+	},
+	{
+		"name" : "DzLockPoseAction",
+		"text" : "Lock Selected Node(s) Pose",
+		"custom" : false
+	},
+	{
+		"name" : "DzLockSelectedAction",
+		"text" : "Lock Selected",
+		"custom" : false
+	},
+	{
+		"name" : "DzMemorizeFigureAction",
+		"text" : "Memorize Figure",
+		"custom" : false
+	},
+	{
+		"name" : "DzMemorizeFigureShapeAction",
+		"text" : "Memorize Figure Shape",
+		"custom" : false
+	},
+	{
+		"name" : "DzMemorizeFigurePoseAction",
+		"text" : "Memorize Figure Pose",
+		"custom" : false
+	},
+	{
+		"name" : "DzMemorizePoseAction",
+		"text" : "Memorize Selected Item(s) Pose",
+		"custom" : false
+	},
+	{
+		"name" : "DzMemorizeSelectedItemsAction",
+		"text" : "Memorize Selected Item(s)",
+		"custom" : false
+	},
+	{
+		"name" : "DzMemorizeShapeAction",
+		"text" : "Memorize Selected Item(s) Shape",
+		"custom" : false
+	},
+	{
+		"name" : "DzMoveToFloorAction",
+		"text" : "Move To Floor",
+		"custom" : false
+	},
+	{
+		"name" : "DzPasteFigureAction",
+		"text" : "Paste to Figure(s)",
+		"custom" : false
+	},
+	{
+		"name" : "DzPasteFigureMorphAction",
+		"text" : "Paste Figure Shape",
+		"custom" : false
+	},
+	{
+		"name" : "DzPasteFigurePoseAction",
+		"text" : "Paste Figure Pose",
+		"custom" : false
+	},
+	{
+		"name" : "DzPasteNodeAction",
+		"text" : "Paste to Selected Item(s)",
+		"custom" : false
+	},
+	{
+		"name" : "DzPasteNodeMorphAction",
+		"text" : "Paste Shape to Selected Item(s)",
+		"custom" : false
+	},
+	{
+		"name" : "DzPasteNodePoseAction",
+		"text" : "Paste Pose to Selected Item(s)",
+		"custom" : false
+	},
+	{
+		"name" : "DzDuplicateNodeAction",
+		"text" : "Duplicate Node(s)",
+		"custom" : false
+	},
+	{
+		"name" : "DzDuplicateNodeHierarchyAction",
+		"text" : "Duplicate Node Hierarchies",
+		"custom" : false
+	},
+	{
+		"name" : "DzRestoreFigureAction",
+		"text" : "Restore Figure",
+		"custom" : false
+	},
+	{
+		"name" : "DzRestoreFigureShapeAction",
+		"text" : "Restore Figure Shape",
+		"custom" : false
+	},
+	{
+		"name" : "DzRestoreFigurePoseAction",
+		"text" : "Restore Figure Pose",
+		"custom" : false
+	},
+	{
+		"name" : "DzRestorePoseAction",
+		"text" : "Restore Selected Item(s) Pose",
+		"custom" : false
+	},
+	{
+		"name" : "DzRestoreSelectedItemsAction",
+		"text" : "Restore Selected Item(s)",
+		"custom" : false
+	},
+	{
+		"name" : "DzRestoreShapeAction",
+		"text" : "Restore Selected Item(s) Shape",
+		"custom" : false
+	},
+	{
+		"name" : "DzSymmetryAction",
+		"text" : "Symmetry...",
+		"custom" : false
+	},
+	{
+		"name" : "DzBakeToTransformsAction",
+		"text" : "Bake To Transforms...",
+		"custom" : false
+	},
+	{
+		"name" : "DzUnHideSelectedAction",
+		"text" : "UnHide Selected",
+		"custom" : false
+	},
+	{
+		"name" : "DzUnlockShapeAction",
+		"text" : "Unlock Selected Node(s) Shape",
+		"custom" : false
+	},
+	{
+		"name" : "DzUnlockNodeAction",
+		"text" : "Unlock Selected Node(s)",
+		"custom" : false
+	},
+	{
+		"name" : "DzUnlockPoseAction",
+		"text" : "Unlock Selected Node(s) Pose",
+		"custom" : false
+	},
+	{
+		"name" : "DzUnLockSelectedAction",
+		"text" : "UnLock Selected",
+		"custom" : false
+	},
+	{
+		"name" : "DzZeroFigureAction",
+		"text" : "Zero Figure",
+		"custom" : false
+	},
+	{
+		"name" : "DzZeroFigureShapeAction",
+		"text" : "Zero Figure Shape",
+		"custom" : false
+	},
+	{
+		"name" : "DzZeroFigurePoseAction",
+		"text" : "Zero Figure Pose",
+		"custom" : false
+	},
+	{
+		"name" : "DzZeroPoseAction",
+		"text" : "Zero Selected Item(s) Pose",
+		"custom" : false
+	},
+	{
+		"name" : "DzZeroSelectedItemsAction",
+		"text" : "Zero Selected Item(s)",
+		"custom" : false
+	},
+	{
+		"name" : "DzZeroShapeAction",
+		"text" : "Zero Selected Item(s) Shape",
+		"custom" : false
+	},
+	{
+		"name" : "DzSideNavAddFavoriteSelectedAction",
+		"text" : "Add Selected Properties to Favorites",
+		"custom" : false
+	},
+	{
+		"name" : "DzSideNavRemoveFavoriteSelectedAction",
+		"text" : "Remove Selected Properties from Favorites",
+		"custom" : false
+	},
+	{
+		"name" : "DzSideNavLockSelectedAction",
+		"text" : "Lock Selected Properties",
+		"custom" : false
+	},
+	{
+		"name" : "DzSideNavUnLockSelectedAction",
+		"text" : "UnLock Selected Properties",
+		"custom" : false
+	},
+	{
+		"name" : "DzSideNavHideSelectedAction",
+		"text" : "Hide Selected Properties",
+		"custom" : false
+	},
+	{
+		"name" : "DzSideNavUnHideSelectedAction",
+		"text" : "UnHide Selected Properties",
+		"custom" : false
+	},
+	{
+		"name" : "DzSideNavCollapseAllAction",
+		"text" : "Collapse All",
+		"custom" : false
+	},
+	{
+		"name" : "DzSideNavCollapseAllSelectedAction",
+		"text" : "Collapse Selected",
+		"custom" : false
+	},
+	{
+		"name" : "DzSideNavExpandAllAction",
+		"text" : "Expand All",
+		"custom" : false
+	},
+	{
+		"name" : "DzSideNavExpandAllSelectedAction",
+		"text" : "Expand Selected",
+		"custom" : false
+	},
+	{
+		"name" : "DzSideNavClearPropertyNewAction",
+		"text" : "Mark All Properties As Seen",
+		"custom" : false
+	},
+	{
+		"name" : "DzSideNavCanAutoFollowSelectedAction",
+		"text" : "Enable AutoFollow on Selected Properties",
+		"custom" : false
+	},
+	{
+		"name" : "DzSideNavCannotAutoFollowSelectedAction",
+		"text" : "Disable AutoFollow on Selected Properties",
+		"custom" : false
+	},
+	{
+		"name" : "DzSideNavLimitsOnSelectedAction",
+		"text" : "Enable Limits on Selected Properties",
+		"custom" : false
+	},
+	{
+		"name" : "DzSideNavLimitsOffSelectedAction",
+		"text" : "Disable Limits on Selected Properties",
+		"custom" : false
+	},
+	{
+		"name" : "DzElementSideNavAddFavoriteSelectedAction",
+		"text" : "Add Selected Properties to Favorites",
+		"custom" : false
+	},
+	{
+		"name" : "DzElementSideNavRemoveFavoriteSelectedAction",
+		"text" : "Remove Selected Properties from Favorites",
+		"custom" : false
+	},
+	{
+		"name" : "DzElementSideNavLockSelectedAction",
+		"text" : "Lock Selected Properties",
+		"custom" : false
+	},
+	{
+		"name" : "DzElementSideNavUnLockSelectedAction",
+		"text" : "UnLock Selected Properties",
+		"custom" : false
+	},
+	{
+		"name" : "DzElementSideNavLimitsOnSelectedAction",
+		"text" : "Enable Limits on Selected Properties",
+		"custom" : false
+	},
+	{
+		"name" : "DzElementSideNavLimitsOffSelectedAction",
+		"text" : "Disable Limits on Selected Properties",
+		"custom" : false
+	},
+	{
+		"name" : "DzElementSideNavCollapseAllAction",
+		"text" : "Collapse All",
+		"custom" : false
+	},
+	{
+		"name" : "DzElementSideNavCollapseAllSelectedAction",
+		"text" : "Collapse Selected",
+		"custom" : false
+	},
+	{
+		"name" : "DzElementSideNavExpandAllAction",
+		"text" : "Expand All",
+		"custom" : false
+	},
+	{
+		"name" : "DzElementSideNavExpandAllSelectedAction",
+		"text" : "Expand Selected",
+		"custom" : false
+	},
+	{
+		"name" : "DzStyledPropertyShowSettingsAction",
+		"text" : "Parameter Settings...",
+		"custom" : false
+	},
+	{
+		"name" : "DzStyledPropertyAddFavoriteAction",
+		"text" : "Add to Favorites",
+		"custom" : false
+	},
+	{
+		"name" : "DzStyledPropertyRemoveFavoriteAction",
+		"text" : "Remove from Favorites",
+		"custom" : false
+	},
+	{
+		"name" : "DzStyledPropertyLockAction",
+		"text" : "Lock",
+		"custom" : false
+	},
+	{
+		"name" : "DzStyledPropertyUnlockAction",
+		"text" : "Unlock",
+		"custom" : false
+	},
+	{
+		"name" : "DzStyledPropertyHideAction",
+		"text" : "Hide",
+		"custom" : false
+	},
+	{
+		"name" : "DzStyledPropertyUnhideAction",
+		"text" : "Unhide",
+		"custom" : false
+	},
+	{
+		"name" : "DzStyledPropertyResetAction",
+		"text" : "Reset",
+		"custom" : false
+	},
+	{
+		"name" : "DzSubDAction",
+		"text" : "Convert to SubD...",
+		"custom" : false
+	},
+	{
+		"name" : "DzTriangulateAction",
+		"text" : "Triangulate...",
+		"custom" : false
+	},
+	{
+		"name" : "DzDetriangulateAction",
+		"text" : "Detriangulate...",
+		"custom" : false
+	},
+	{
+		"name" : "DzConvertFacetRibbonsIntoLinesAction",
+		"text" : "Convert Ribbons to Lines...",
+		"custom" : false
+	},
+	{
+		"name" : "DzConvertFacetTubesIntoLinesAction",
+		"text" : "Convert Tubes to Lines...",
+		"custom" : false
+	},
+	{
+		"name" : "DzOptimizeLinesAction",
+		"text" : "Optimize Lines...",
+		"custom" : false
+	},
+	{
+		"name" : "DzDynLodAction",
+		"text" : "Add Level of Detail...",
+		"custom" : false
+	},
+	{
+		"name" : "DzNewCameraAction",
+		"text" : "New &Camera...",
+		"custom" : false
+	},
+	{
+		"name" : "DzNewDistantLightAction",
+		"text" : "New &Distant Light...",
+		"custom" : false
+	},
+	{
+		"name" : "DzNewSpotlightAction",
+		"text" : "New &Spotlight...",
+		"custom" : false
+	},
+	{
+		"name" : "DzNewPointLightAction",
+		"text" : "New &Point Light...",
+		"custom" : false
+	},
+	{
+		"name" : "DzNewLinearPointLightAction",
+		"text" : "New &Linear Point Light...",
+		"custom" : false
+	},
+	{
+		"name" : "DzNewNodeAction",
+		"text" : "New &Null...",
+		"custom" : false
+	},
+	{
+		"name" : "DzNewGroupNodeAction",
+		"text" : "New &Group...",
+		"custom" : false
+	},
+	{
+		"name" : "DzNewIKChainAction",
+		"text" : "New IK Chain...",
+		"custom" : false
+	},
+	{
+		"name" : "DzResetScriptEngineAction",
+		"text" : "Reset Script Engine",
+		"custom" : false
+	},
+	{
+		"name" : "DzAuxVPShowIPRToolBarAction",
+		"text" : "Show IPR Toolbar",
+		"custom" : false
+	},
+	{
+		"name" : "DzAuxVPStopIPRRenderAction",
+		"text" : "Stop IPR Render",
+		"custom" : false
+	},
+	{
+		"name" : "DzAuxVPStartIPRRenderAction",
+		"text" : "Start IPR Render",
+		"custom" : false
+	},
+	{
+		"name" : "DzAuxVPSaveIPRRenderAction",
+		"text" : "Save IPR Render...",
+		"custom" : false
+	},
+	{
+		"name" : "DzAdjustRenderAspectRatioToMatchBackdropTextureAction",
+		"text" : "Adjust Aspect Ratio To Backdrop",
+		"custom" : false
+	},
+	{
+		"name" : "DzAdjustRenderDimensionsToMatchBackdropTextureAction",
+		"text" : "Adjust Dimensions To Backdrop",
+		"custom" : false
+	},
+	{
+		"name" : "DzSceneAssetFilterAction",
+		"text" : "Scene...",
+		"custom" : false
+	},
+	{
+		"name" : "DzPushModifierAction",
+		"text" : "Add Push Modifier...",
+		"custom" : false
+	},
+	{
+		"name" : "DzRemovePushModifierAction",
+		"text" : "Remove Push Modifier...",
+		"custom" : false
+	},
+	{
+		"name" : "DzNewNodeInstanceAction",
+		"text" : "New Node Instance...",
+		"custom" : false
+	},
+	{
+		"name" : "DzNewNodeInstancesAction",
+		"text" : "New Node Instances...",
+		"custom" : false
+	},
+	{
+		"name" : "DzGroupInstancesAction",
+		"text" : "Group Like Sibling Instances",
+		"custom" : false
+	},
+	{
+		"name" : "DzUnGroupInstancesAction",
+		"text" : "Break Instance Group...",
+		"custom" : false
+	},
+	{
+		"name" : "DzNewGeometryShellAction",
+		"text" : "New Geometry Shell...",
+		"custom" : false
+	},
+	{
+		"name" : "DzUpdateImportsFromSourceAction",
+		"text" : "Update Asset(s) from Import Source(s)...",
+		"custom" : false
+	},
+	{
+		"name" : "DzUpdateSceneImportsFromSourceAction",
+		"text" : "Update Scene Asset(s) from Import Source(s)...",
+		"custom" : false
+	},
+	{
+		"name" : "DzConditionalGraftModifierAction",
+		"text" : "Add Conditional Graft Modifier...",
+		"custom" : false
+	},
+	{
+		"name" : "DzRemoveConditionalGraftModifierAction",
+		"text" : "Remove Conditional Graft Modifier...",
+		"custom" : false
+	},
+	{
+		"name" : "DzDrawStartAction",
+		"text" : "Draw Start",
+		"custom" : false
+	},
+	{
+		"name" : "DzDrawStopAction",
+		"text" : "Draw Stop",
+		"custom" : false
+	},
+	{
+		"name" : "DzFaceshopMorphLoaderAction",
+		"text" : "Start HeadShop...",
+		"custom" : false
+	},
+	{
+		"name" : "aniMateAction",
+		"text" : "aniMate2",
+		"custom" : false
+	},
+	{
+		"name" : "aniMateSeekFirst",
+		"text" : "Seek First",
+		"custom" : false
+	},
+	{
+		"name" : "aniMatePlayToggle",
+		"text" : "Play/Pause",
+		"custom" : false
+	},
+	{
+		"name" : "aniMateSeekLast",
+		"text" : "Seek Last",
+		"custom" : false
+	},
+	{
+		"name" : "aniMateFrameNext",
+		"text" : "Next Frame",
+		"custom" : false
+	},
+	{
+		"name" : "aniMateFramePrev",
+		"text" : "Previous Frame",
+		"custom" : false
+	},
+	{
+		"name" : "aniMateZoomIn",
+		"text" : "Zoom In",
+		"custom" : false
+	},
+	{
+		"name" : "aniMateZoomOut",
+		"text" : "Zoom Out",
+		"custom" : false
+	},
+	{
+		"name" : "aniMateCopy",
+		"text" : "Copy",
+		"custom" : false
+	},
+	{
+		"name" : "aniMatePaste",
+		"text" : "Paste",
+		"custom" : false
+	},
+	{
+		"name" : "aniMateDelete",
+		"text" : "Delete",
+		"custom" : false
+	},
+	{
+		"name" : "aniMateKey",
+		"text" : "Set Key",
+		"custom" : false
+	},
+	{
+		"name" : "aniMateZero",
+		"text" : "Zero Key",
+		"custom" : false
+	},
+	{
+		"name" : "aniMatePreferences",
+		"text" : "Preferences...",
+		"custom" : false
+	},
+	{
+		"name" : "aniMate2ViewToolAction",
+		"text" : "aniMate2",
+		"custom" : false
+	},
+	{
+		"name" : "aniMate2Pane1Action",
+		"text" : "aniMate2 Constraints",
+		"custom" : false
+	},
+	{
+		"name" : "GenXPaneAction",
+		"text" : "GenX",
+		"custom" : false
+	},
+	{
+		"name" : "GenXAbout",
+		"text" : "About GenX",
+		"custom" : false
+	},
+	{
+		"name" : "DzDAZScriptPaneAction",
+		"text" : "Script IDE",
+		"custom" : false
+	},
+	{
+		"name" : "DzSINewAction",
+		"text" : "&New Script",
+		"custom" : false
+	},
+	{
+		"name" : "DzSIOpenAction",
+		"text" : "&Open Script...",
+		"custom" : false
+	},
+	{
+		"name" : "DzSISaveAction",
+		"text" : "&Save Script",
+		"custom" : false
+	},
+	{
+		"name" : "DzSISaveAsAction",
+		"text" : "Save Script &As...",
+		"custom" : false
+	},
+	{
+		"name" : "DzSISaveEncryptedAction",
+		"text" : "Save &Encrypted Script...",
+		"custom" : false
+	},
+	{
+		"name" : "DzSIReloadAction",
+		"text" : "&Reload Script",
+		"custom" : false
+	},
+	{
+		"name" : "DzSICloseAction",
+		"text" : "&Close Script",
+		"custom" : false
+	},
+	{
+		"name" : "DzSICloseAllExceptCurrentAction",
+		"text" : "Close All Except Current",
+		"custom" : false
+	},
+	{
+		"name" : "DzSICloseAllAction",
+		"text" : "Close All Scripts",
+		"custom" : false
+	},
+	{
+		"name" : "DzSIExecuteAction",
+		"text" : "R&un [Continue] Script",
+		"custom" : false
+	},
+	{
+		"name" : "DzSICutAction",
+		"text" : "Cut to Clipboard",
+		"custom" : false
+	},
+	{
+		"name" : "DzSICopyAction",
+		"text" : "Copy to Clipboard",
+		"custom" : false
+	},
+	{
+		"name" : "DzSIPasteAction",
+		"text" : "Paste from Clipboard",
+		"custom" : false
+	},
+	{
+		"name" : "DzSIDeleteAction",
+		"text" : "Delete",
+		"custom" : false
+	},
+	{
+		"name" : "DzSISelectAllAction",
+		"text" : "Select All",
+		"custom" : false
+	},
+	{
+		"name" : "DzSIToggleAttributesAction",
+		"text" : "Attributes",
+		"custom" : false
+	},
+	{
+		"name" : "DzSIToggleFindAction",
+		"text" : "Find [&& Replace]",
+		"custom" : false
+	},
+	{
+		"name" : "DzSIFindFirstAction",
+		"text" : "Find First",
+		"custom" : false
+	},
+	{
+		"name" : "DzSIFindPreviousAction",
+		"text" : "Find Previous",
+		"custom" : false
+	},
+	{
+		"name" : "DzSIFindNextAction",
+		"text" : "Find Next",
+		"custom" : false
+	},
+	{
+		"name" : "DzSIReplacePreviousAction",
+		"text" : "Replace && Find Previous",
+		"custom" : false
+	},
+	{
+		"name" : "DzSIReplaceNextAction",
+		"text" : "Replace && Find Next",
+		"custom" : false
+	},
+	{
+		"name" : "DzSIReplaceAllAction",
+		"text" : "Replace All",
+		"custom" : false
+	},
+	{
+		"name" : "DzSIGotoLineAction",
+		"text" : "Go to Line...",
+		"custom" : false
+	},
+	{
+		"name" : "DzSIPreferencesAction",
+		"text" : "Preferences...",
+		"custom" : false
+	},
+	{
+		"name" : "DzSIDebugAction",
+		"text" : "Debugger...",
+		"custom" : false
+	},
+	{
+		"name" : "DzSIInterruptAction",
+		"text" : "Interrupt Script",
+		"custom" : false
+	},
+	{
+		"name" : "DzSIStepIntoAction",
+		"text" : "Step Into",
+		"custom" : false
+	},
+	{
+		"name" : "DzSIStepOverAction",
+		"text" : "Step Over",
+		"custom" : false
+	},
+	{
+		"name" : "DzSIStepOutAction",
+		"text" : "Step Out",
+		"custom" : false
+	},
+	{
+		"name" : "DzSIRunToCursorAction",
+		"text" : "Run To Cursor",
+		"custom" : false
+	},
+	{
+		"name" : "DzSIToggleBreakpointAction",
+		"text" : "Toggle Breakpoint",
+		"custom" : false
+	},
+	{
+		"name" : "DzSIClearDebugAction",
+		"text" : "Clear Output",
+		"custom" : false
+	},
+	{
+		"name" : "DzSIClearErrorAction",
+		"text" : "Clear Errors",
+		"custom" : false
+	},
+	{
+		"name" : "DzSIClearConsoleAction",
+		"text" : "Clear Console",
+		"custom" : false
+	},
+	{
+		"name" : "DzSIDocsAction",
+		"text" : "Scripting &Documentation...",
+		"custom" : false
+	},
+	{
+		"name" : "DzAlignPaneAction",
+		"text" : "Align",
+		"custom" : false
+	},
+	{
+		"name" : "DzAlignAction",
+		"text" : "Align Selected Nodes",
+		"custom" : false
+	},
+	{
+		"name" : "DzAPResetAction",
+		"text" : "Reset Options",
+		"custom" : false
+	},
+	{
+		"name" : "DzSetDefaultCompatibilityBasesAction",
+		"text" : "Set Default Compatibility Base(s)...",
+		"custom" : false
+	},
+	{
+		"name" : "DzSceneSupportAssetFilterAction",
+		"text" : "Scene Asset(s)...",
+		"custom" : false
+	},
+	{
+		"name" : "DzNodeAssetFilterAction",
+		"text" : "Figure/Prop Assets...",
+		"custom" : false
+	},
+	{
+		"name" : "DzMorphAssetFilterAction",
+		"text" : "Morph Asset(s)...",
+		"custom" : false
+	},
+	{
+		"name" : "DzUVAssetFilterAction",
+		"text" : "UV Asset(s)...",
+		"custom" : false
+	},
+	{
+		"name" : "DzShaderSupportAssetFilterAction",
+		"text" : "Shader Definition Asset...",
+		"custom" : false
+	},
+	{
+		"name" : "DzDynamicClothAssetFilterAction",
+		"text" : "Dynamic Cloth Asset...",
+		"custom" : false
+	},
+	{
+		"name" : "DzCloneAssetSaveAction",
+		"text" : "Clone Asset...",
+		"custom" : false
+	},
+	{
+		"name" : "DzSaveModifiedAction",
+		"text" : "Save Modified Assets...",
+		"custom" : false
+	},
+	{
+		"name" : "DzBatchConvertPaneAction",
+		"text" : "Batch Convert",
+		"custom" : false
+	},
+	{
+		"name" : "DzShaderBakerPaneUseBakeAction",
+		"text" : "Use Baked Textures",
+		"custom" : false
+	},
+	{
+		"name" : "DzShaderBakerPaneAutoBakeAction",
+		"text" : "Auto Bake Textures",
+		"custom" : false
+	},
+	{
+		"name" : "DzShaderBakerPaneRefreshBakeAction",
+		"text" : "Refresh Baked Textures",
+		"custom" : false
+	},
+	{
+		"name" : "DzBryceBridge",
+		"text" : "Send to Bryce...",
+		"custom" : false
+	},
+	{
+		"name" : "DzParametersPaneAction",
+		"text" : "Parameters",
+		"custom" : false
+	},
+	{
+		"name" : "DzParamShowHiddenPropAction",
+		"text" : "Show Hidden Properties",
+		"custom" : false
+	},
+	{
+		"name" : "DzParamGroupExpansionModeAction",
+		"text" : "Persistent Group Expansion",
+		"custom" : false
+	},
+	{
+		"name" : "DzParamDisplaySeparateAction",
+		"text" : "Display Separate Items",
+		"custom" : false
+	},
+	{
+		"name" : "DzParamShowFollowersAction",
+		"text" : "Display Followers",
+		"custom" : false
+	},
+	{
+		"name" : "DzParamEditModeAction",
+		"text" : "Edit Mode",
+		"custom" : false
+	},
+	{
+		"name" : "DzParamConsolidatePropAction",
+		"text" : "Consolidate Properties",
+		"custom" : false
+	},
+	{
+		"name" : "DzPEPropertyClonerAction",
+		"text" : "Property Cloner...",
+		"custom" : false
+	},
+	{
+		"name" : "DzPEPropertyMoverAction",
+		"text" : "Property Mover...",
+		"custom" : false
+	},
+	{
+		"name" : "DzPEConformPropertyConverterAction",
+		"text" : "Conforming Property Converter...",
+		"custom" : false
+	},
+	{
+		"name" : "DzPESelectMorphVerticesAction",
+		"text" : "Select Morph Vertices",
+		"custom" : false
+	},
+	{
+		"name" : "DzPosingPaneAction",
+		"text" : "Posing",
+		"custom" : false
+	},
+	{
+		"name" : "DzPSNGShowHiddenAction",
+		"text" : "Show Hidden Properties",
+		"custom" : false
+	},
+	{
+		"name" : "DzPSNGDisplaySeparateAction",
+		"text" : "Display Separate Items",
+		"custom" : false
+	},
+	{
+		"name" : "DzPSNGShowFollowersAction",
+		"text" : "Display Followers",
+		"custom" : false
+	},
+	{
+		"name" : "DzCamerasPaneAction",
+		"text" : "Cameras",
+		"custom" : false
+	},
+	{
+		"name" : "DzCMRSShowHiddenAction",
+		"text" : "Show Hidden Properties",
+		"custom" : false
+	},
+	{
+		"name" : "DzCMRSSyncWithSceneAction",
+		"text" : "Sync With Scene Selection",
+		"custom" : false
+	},
+	{
+		"name" : "DzLightsPaneAction",
+		"text" : "Lights",
+		"custom" : false
+	},
+	{
+		"name" : "DzLGHTSShowHiddenAction",
+		"text" : "Show Hidden Properties",
+		"custom" : false
+	},
+	{
+		"name" : "DzLGHTSSyncWithSceneAction",
+		"text" : "Sync With Scene Selection",
+		"custom" : false
+	},
+	{
+		"name" : "DzShapingPaneAction",
+		"text" : "Shaping",
+		"custom" : false
+	},
+	{
+		"name" : "DzSHPNGShowHiddenAction",
+		"text" : "Show Hidden Properties",
+		"custom" : false
+	},
+	{
+		"name" : "DzSHPNGDisplaySeparateAction",
+		"text" : "Display Separate Items",
+		"custom" : false
+	},
+	{
+		"name" : "DzSHPNGShowFollowersAction",
+		"text" : "Display Followers",
+		"custom" : false
+	},
+	{
+		"name" : "DzSHPNGSyncNavigationAction",
+		"text" : "Sync Region Selection with Scene",
+		"custom" : false
+	},
+	{
+		"name" : "DzToolPaneAction",
+		"text" : "Tool Settings",
+		"custom" : false
+	},
+	{
+		"name" : "DzRegionNavigatorToolAction",
+		"text" : "Region Navigator",
+		"custom" : false
+	},
+	{
+		"name" : "DzUVViewAction",
+		"text" : "UV View",
+		"custom" : false
+	},
+	{
+		"name" : "DzContentLibraryPaneAction",
+		"text" : "Content Library",
+		"custom" : false
+	},
+	{
+		"name" : "DzCLColumnViewAction",
+		"text" : "View as List",
+		"custom" : false
+	},
+	{
+		"name" : "DzCLTreeViewAction",
+		"text" : "View as Tree",
+		"custom" : false
+	},
+	{
+		"name" : "DzCLSideBySideViewAction",
+		"text" : "View Side By Side",
+		"custom" : false
+	},
+	{
+		"name" : "DzCLContainerViewCollapsibleAction",
+		"text" : "Allow Container View Collapse",
+		"custom" : false
+	},
+	{
+		"name" : "DzCLDeleteSelectedAssetAction",
+		"text" : "Delete Selected Asset(s)",
+		"custom" : false
+	},
+	{
+		"name" : "DzCLSearchHardDrivesAction",
+		"text" : "Search Drive(s) for Files...",
+		"custom" : false
+	},
+	{
+		"name" : "DzCLScanKnownDirsAction",
+		"text" : "Scan Known Directories for Files...",
+		"custom" : false
+	},
+	{
+		"name" : "DzCLImportMappedDirectoriesAction",
+		"text" : "Import Mapped Directories...",
+		"custom" : false
+	},
+	{
+		"name" : "DzContentDBEditorAction",
+		"text" : "&Content DB Editor...",
+		"custom" : false
+	},
+	{
+		"name" : "DzCLDatabaseMaintenanceAction",
+		"text" : "Content DB Maintenance...",
+		"custom" : false
+	},
+	{
+		"name" : "DzCLCreatePoserCompanionFilesAction",
+		"text" : "Create Poser Companion Files...",
+		"custom" : false
+	},
+	{
+		"name" : "DzCustomizeAction",
+		"text" : "&Customize...",
+		"custom" : false
+	},
+	{
+		"name" : "DzDecimatorPaneAction",
+		"text" : "Decimator",
+		"custom" : false
+	},
+	{
+		"name" : "DzDFormPaneAction",
+		"text" : "DForm",
+		"custom" : false
+	},
+	{
+		"name" : "DzNewDFormerAction",
+		"text" : "New D-Former...",
+		"custom" : false
+	},
+	{
+		"name" : "DzDFormFilterAction",
+		"text" : "D-Form Preset (.ds*)...",
+		"custom" : false
+	},
+	{
+		"name" : "DzDFormAssetFilterAction",
+		"text" : "D-Former(s) Preset...",
+		"custom" : false
+	},
+	{
+		"name" : "DzNewDForceWindNodeAction",
+		"text" : "New dForce Wind Node...",
+		"custom" : false
+	},
+	{
+		"name" : "DzNewDForceModifierWeightNodeAction",
+		"text" : "New dForce Modifier Weight Node...",
+		"custom" : false
+	},
+	{
+		"name" : "DzAddDForceModifierStaticSurfaceAction",
+		"text" : "Add dForce Modifier: Static Surface",
+		"custom" : false
+	},
+	{
+		"name" : "DzAddDForceModifierDynamicSurfaceAction",
+		"text" : "Add dForce Modifier: Dynamic Surface",
+		"custom" : false
+	},
+	{
+		"name" : "DzAddDForceModifierDynamicSurfaceAddOnAction",
+		"text" : "Add dForce Modifier: Dynamic Surface Add-On",
+		"custom" : false
+	},
+	{
+		"name" : "DzRemoveDForceModifierAction",
+		"text" : "Remove dForce Modifier",
+		"custom" : false
+	},
+	{
+		"name" : "DzClearDForceSimAllAction",
+		"text" : "Clear All Objects",
+		"custom" : false
+	},
+	{
+		"name" : "DzClearDForceSimNonFrozenAllAction",
+		"text" : "Clear All Non-Frozen Objects",
+		"custom" : false
+	},
+	{
+		"name" : "DzClearDForceSimOnSelectedAction",
+		"text" : "Clear Selected Objects",
+		"custom" : false
+	},
+	{
+		"name" : "DzClearDForceSimOnNonFrozenSelectedAction",
+		"text" : "Clear Selected, Non-Frozen, Objects",
+		"custom" : false
+	},
+	{
+		"name" : "DzDForceSurfaceAdjusterAction",
+		"text" : "dForce Surface Adjuster...",
+		"custom" : false
+	},
+	{
+		"name" : "DzSelectDForceStartingCollisionVerticesAction",
+		"text" : "Select dForce Starting Collision Vertices",
+		"custom" : false
+	},
+	{
+		"name" : "DzEasyLoaderTool",
+		"text" : "",
+		"custom" : false
+	},
+	{
+		"name" : "DzExpExportAction",
+		"text" : "ExP Export...",
+		"custom" : false
+	},
+	{
+		"name" : "DzFaceTransferPaneAction",
+		"text" : "Face Transfer",
+		"custom" : false
+	},
+	{
+		"name" : "DzFaceTransferSelectImageAction",
+		"text" : "Browse for image...",
+		"custom" : false
+	},
+	{
+		"name" : "DzFaceTransferGenerateSelectedAction",
+		"text" : "Generate on Selected Figure",
+		"custom" : false
+	},
+	{
+		"name" : "DzFaceTransferGenerateMaleAction",
+		"text" : "Generate Face on New Male",
+		"custom" : false
+	},
+	{
+		"name" : "DzFaceTransferGenerateFemaleAction",
+		"text" : "Generate Face on New Female",
+		"custom" : false
+	},
+	{
+		"name" : "DzFaceTransferSaveAction",
+		"text" : "Save Face...",
+		"custom" : false
+	},
+	{
+		"name" : "DzFigureSetupPaneAction",
+		"text" : "Figure Setup",
+		"custom" : false
+	},
+	{
+		"name" : "DzFSCopyFromFigureAction",
+		"text" : "Copy From Selected Figure",
+		"custom" : false
+	},
+	{
+		"name" : "DzFSLoadPresetAction",
+		"text" : "Load Figure Template...",
+		"custom" : false
+	},
+	{
+		"name" : "DzFSSavePresetAction",
+		"text" : "Save Figure Template...",
+		"custom" : false
+	},
+	{
+		"name" : "DzFSLoadPHIAction",
+		"text" : "Import Poser Hierarchy...",
+		"custom" : false
+	},
+	{
+		"name" : "DzFSCreateFigureAction",
+		"text" : "Create Figure",
+		"custom" : false
+	},
+	{
+		"name" : "DzFSClearHierarchyAction",
+		"text" : "Clear Hierarchy",
+		"custom" : false
+	},
+	{
+		"name" : "DzFSRegionEditorAction",
+		"text" : "Region Editor...",
+		"custom" : false
+	},
+	{
+		"name" : "DzUpdateGeometryAction",
+		"text" : "Update Base Geometry...",
+		"custom" : false
+	},
+	{
+		"name" : "DzMeshSmoothResetBaseAction",
+		"text" : "Set Smoothing Modifier Base",
+		"custom" : false
+	},
+	{
+		"name" : "DzMeshSmoothMorphBakerAction",
+		"text" : "Bake Smoothed Morphs...",
+		"custom" : false
+	},
+	{
+		"name" : "DzFilamentDrawStyleAction",
+		"text" : "Filament",
+		"custom" : false
+	},
+	{
+		"name" : "DzNewFilamentDrawOptionsNodeAction",
+		"text" : "New Filament Draw Options Node...",
+		"custom" : false
+	},
+	{
+		"name" : "DzHexBridge",
+		"text" : "Send to Hexagon...",
+		"custom" : false
+	},
+	{
+		"name" : "DzIrayDrawStyleAction",
+		"text" : "NVIDIA Iray",
+		"custom" : false
+	},
+	{
+		"name" : "DzNewIrayDecalNodeAction",
+		"text" : "New Iray Decal Node...",
+		"custom" : false
+	},
+	{
+		"name" : "DzNewIraySectionPlaneNodeAction",
+		"text" : "New Iray Section Plane Node...",
+		"custom" : false
+	},
+	{
+		"name" : "DzIrayAutoExposureAction",
+		"text" : "Iray Auto Exposure",
+		"custom" : false
+	},
+	{
+		"name" : "DzNewEnvironmentNodeAction",
+		"text" : "New Environment Options Node...",
+		"custom" : false
+	},
+	{
+		"name" : "DzNewTonemapperNodeAction",
+		"text" : "New Tonemapper Options Node...",
+		"custom" : false
+	},
+	{
+		"name" : "DzJointEditorToolAction",
+		"text" : "Joint Editor",
+		"custom" : false
+	},
+	{
+		"name" : "DzJECustomColorsAction",
+		"text" : "Customize Drawing...",
+		"custom" : false
+	},
+	{
+		"name" : "DzJECreateBoneAction",
+		"text" : "Create Child Bone...",
+		"custom" : false
+	},
+	{
+		"name" : "DzJECreateSiblingBoneAction",
+		"text" : "Create Sibling Bone",
+		"custom" : false
+	},
+	{
+		"name" : "DzJEDuplicateBonesAction",
+		"text" : "Duplicate Bones",
+		"custom" : false
+	},
+	{
+		"name" : "DzJESplitBoneAction",
+		"text" : "Split Bone",
+		"custom" : false
+	},
+	{
+		"name" : "DzJETogglePropagateTranslationAction",
+		"text" : "Propagate Translations",
+		"custom" : false
+	},
+	{
+		"name" : "DzJEToggleViewBoneCreationAction",
+		"text" : "Interactive Mode",
+		"custom" : false
+	},
+	{
+		"name" : "DzJEConvertPropToFigureAction",
+		"text" : "Convert Prop to Figure...",
+		"custom" : false
+	},
+	{
+		"name" : "DzJEConvertFigureToPropAction",
+		"text" : "Convert Figure to Prop...",
+		"custom" : false
+	},
+	{
+		"name" : "DzJERenameNodeAction",
+		"text" : "Rename Node...",
+		"custom" : false
+	},
+	{
+		"name" : "DzJEReparentBoneAction",
+		"text" : "Reparent Bone...",
+		"custom" : false
+	},
+	{
+		"name" : "DzJEMirrorAction",
+		"text" : "Mirror Joints...",
+		"custom" : false
+	},
+	{
+		"name" : "DzJEBakeRotationsAction",
+		"text" : "Bake Joint Rotations...",
+		"custom" : false
+	},
+	{
+		"name" : "DzJEDeleteBoneAction",
+		"text" : "Delete Bone",
+		"custom" : false
+	},
+	{
+		"name" : "DzJEDeleteUnusedBonesAction",
+		"text" : "Delete Unused Bones...",
+		"custom" : false
+	},
+	{
+		"name" : "DzJERotationOrderXYZAction",
+		"text" : "XYZ",
+		"custom" : false
+	},
+	{
+		"name" : "DzJERotationOrderXZYAction",
+		"text" : "XZY",
+		"custom" : false
+	},
+	{
+		"name" : "DzJERotationOrderYXZAction",
+		"text" : "YXZ",
+		"custom" : false
+	},
+	{
+		"name" : "DzJERotationOrderYZXAction",
+		"text" : "YZX",
+		"custom" : false
+	},
+	{
+		"name" : "DzJERotationOrderZXYAction",
+		"text" : "ZXY",
+		"custom" : false
+	},
+	{
+		"name" : "DzJERotationOrderZYXAction",
+		"text" : "ZYX",
+		"custom" : false
+	},
+	{
+		"name" : "DzJEToggleAutoAlignNodeAction",
+		"text" : "Auto Align Node",
+		"custom" : false
+	},
+	{
+		"name" : "DzJEAlignNodeAction",
+		"text" : "Align Node",
+		"custom" : false
+	},
+	{
+		"name" : "DzJEAlignAllBonesAction",
+		"text" : "Align All Bones",
+		"custom" : false
+	},
+	{
+		"name" : "DzJESnapCenterPointAction",
+		"text" : "Snap Center Point",
+		"custom" : false
+	},
+	{
+		"name" : "DzJESnapEndPointAction",
+		"text" : "Snap End Point",
+		"custom" : false
+	},
+	{
+		"name" : "DzJEToggleAutoSnapEndPointsAction",
+		"text" : "Auto Snap End Points",
+		"custom" : false
+	},
+	{
+		"name" : "DzJEMemorizeFigureRiggingPropertiesAction",
+		"text" : "Memorize Figure Rigging",
+		"custom" : false
+	},
+	{
+		"name" : "DzJEMemorizeNodeRiggingPropertiesAction",
+		"text" : "Memorize Selected Node(s) Rigging",
+		"custom" : false
+	},
+	{
+		"name" : "DzJERestoreFigureRiggingPropertiesAction",
+		"text" : "Restore Figure Rigging",
+		"custom" : false
+	},
+	{
+		"name" : "DzJERestoreNodeRiggingPropertiesAction",
+		"text" : "Restore Selected Node(s) Rigging",
+		"custom" : false
+	},
+	{
+		"name" : "DzJETransferWSRiggingAction",
+		"text" : "Transfer Rigging (Figure Space)",
+		"custom" : false
+	},
+	{
+		"name" : "DzJECreateDonorFigureAction",
+		"text" : "Extract Donor Figure",
+		"custom" : false
+	},
+	{
+		"name" : "DzMVCCageAdjustRigToShapeAction",
+		"text" : "Adjust Rigging To Shape...",
+		"custom" : false
+	},
+	{
+		"name" : "DzJESelectedNodesAttributesEditAction",
+		"text" : "Selected Node(s) Attributes...",
+		"custom" : false
+	},
+	{
+		"name" : "DzJECreateControlBonesAction",
+		"text" : "Create Control Bone(s)...",
+		"custom" : false
+	},
+	{
+		"name" : "DzLayerAssetFilterAction",
+		"text" : "Layered Image(s) Preset...",
+		"custom" : false
+	},
+	{
+		"name" : "DzTextureConvertorAction",
+		"text" : "&Map Transfer...",
+		"custom" : false
+	},
+	{
+		"name" : "DzMeasureMetricsPaneAction",
+		"text" : "Measure Metrics",
+		"custom" : false
+	},
+	{
+		"name" : "DzMMExportMeasurementsAction",
+		"text" : "Export Measurements...",
+		"custom" : false
+	},
+	{
+		"name" : "DzMMSelectAllAction",
+		"text" : "Select All",
+		"custom" : false
+	},
+	{
+		"name" : "DzMMSelectTapeMeasuresAction",
+		"text" : "Select All Tape Measures",
+		"custom" : false
+	},
+	{
+		"name" : "DzMMSelectTailorTapesAction",
+		"text" : "Select All Tailor Tapes",
+		"custom" : false
+	},
+	{
+		"name" : "DzMMSelectProtractorsAction",
+		"text" : "Select All Protractors",
+		"custom" : false
+	},
+	{
+		"name" : "DzMMSelectCompoundMeasuresAction",
+		"text" : "Select All Compound Measures",
+		"custom" : false
+	},
+	{
+		"name" : "DzMMSelectChildrenAction",
+		"text" : "Select Children",
+		"custom" : false
+	},
+	{
+		"name" : "DzMMDeselectChildrenAction",
+		"text" : "Deselect Children",
+		"custom" : false
+	},
+	{
+		"name" : "DzMMInvertSelectionAction",
+		"text" : "Invert Selection",
+		"custom" : false
+	},
+	{
+		"name" : "DzMMNoSortAction",
+		"text" : "Do Not Sort",
+		"custom" : false
+	},
+	{
+		"name" : "DzMMSortAscendAction",
+		"text" : "Sort Ascending",
+		"custom" : false
+	},
+	{
+		"name" : "DzMMSortDescendAction",
+		"text" : "Sort Descending",
+		"custom" : false
+	},
+	{
+		"name" : "DzMMExpandAllAction",
+		"text" : "Expand All",
+		"custom" : false
+	},
+	{
+		"name" : "DzMMExpandSelectedAction",
+		"text" : "Expand from Selection",
+		"custom" : false
+	},
+	{
+		"name" : "DzMMCloseAllAction",
+		"text" : "Collapse All",
+		"custom" : false
+	},
+	{
+		"name" : "DzMMCloseSelectedAction",
+		"text" : "Collapse from Selection",
+		"custom" : false
+	},
+	{
+		"name" : "DzCreateMeasureMetricsAction",
+		"text" : "New Measure Metric...",
+		"custom" : false
+	},
+	{
+		"name" : "DzMMSetTailorTapeTargetFacetsAction",
+		"text" : "Set Target Faces for Tailor Tape Node...",
+		"custom" : false
+	},
+	{
+		"name" : "DzMorphFollowerAction",
+		"text" : "Transfer Active Morphs",
+		"custom" : false
+	},
+	{
+		"name" : "DzMorphLoadAction",
+		"text" : "&Morph Loader Advanced...",
+		"custom" : false
+	},
+	{
+		"name" : "DzMorphLoaderAction",
+		"text" : "&Morph Loader Pro...",
+		"custom" : false
+	},
+	{
+		"name" : "OptClothPaneAction",
+		"text" : "Dynamic Clothing",
+		"custom" : false
+	},
+	{
+		"name" : "OptFreezeAction",
+		"text" : "Freeze Simulation",
+		"custom" : false
+	},
+	{
+		"name" : "DzPolygonGroupEditorToolAction",
+		"text" : "Geometry Editor",
+		"custom" : false
+	},
+	{
+		"name" : "DzPGECreateFaceGroupAction",
+		"text" : "Create Face Group...",
+		"custom" : false
+	},
+	{
+		"name" : "DzPGECreateMaterialGroupAction",
+		"text" : "Create Surface...",
+		"custom" : false
+	},
+	{
+		"name" : "DzPGECreateFaceGroupFromSelectionAction",
+		"text" : "Create Face Group from Selected...",
+		"custom" : false
+	},
+	{
+		"name" : "DzPGECreateMaterialGroupFromSelectionAction",
+		"text" : "Create Surface from Selected...",
+		"custom" : false
+	},
+	{
+		"name" : "DzPGECreateRegionGroupAction",
+		"text" : "Create Region...",
+		"custom" : false
+	},
+	{
+		"name" : "DzPGECreateRegionGroupFromSelectionAction",
+		"text" : "Create Region from Selected...",
+		"custom" : false
+	},
+	{
+		"name" : "DzPGECreateRigidityGroupAction",
+		"text" : "Create Rigidity Group...",
+		"custom" : false
+	},
+	{
+		"name" : "DzPGECreateRigidityGroupFromSelectionAction",
+		"text" : "Create Rigidity Group from Selected...",
+		"custom" : false
+	},
+	{
+		"name" : "DzPGESetGraftTargetFacesAction",
+		"text" : "Set Graft Faces for Attachment...",
+		"custom" : false
+	},
+	{
+		"name" : "DzPGESetAutoHideFacesAction",
+		"text" : "Set Auto-Hide Faces for Attachment...",
+		"custom" : false
+	},
+	{
+		"name" : "DzPGEditRigidityGroupsAction",
+		"text" : "Rigidity Group Editor...",
+		"custom" : false
+	},
+	{
+		"name" : "DzPGDeleteSelectedFacetsAction",
+		"text" : "Delete Selected Polygon(s)",
+		"custom" : false
+	},
+	{
+		"name" : "DzPGDeleteHiddenFacetsAction",
+		"text" : "Delete Hidden Polygon(s)",
+		"custom" : false
+	},
+	{
+		"name" : "DzPGDeleteUnusedVerticesAction",
+		"text" : "Delete Unused Vertices",
+		"custom" : false
+	},
+	{
+		"name" : "DzPGClearDeltasFromSelectedAction",
+		"text" : "Clear Selected Deltas from Favorites",
+		"custom" : false
+	},
+	{
+		"name" : "DzPGESetRigidFollowReferenceAction",
+		"text" : "Set Rigid Follow Node Reference from Selected...",
+		"custom" : false
+	},
+	{
+		"name" : "DzPGECreateRigidFollowNodeFromSelectionAction",
+		"text" : "Create Rigid Follow Node from Selected...",
+		"custom" : false
+	},
+	{
+		"name" : "DzPGECreateSelectionGroupAction",
+		"text" : "Create Selection Set...",
+		"custom" : false
+	},
+	{
+		"name" : "DzPGECreateSelectionGroupFromSelectionAction",
+		"text" : "Create Selection Set from Selected...",
+		"custom" : false
+	},
+	{
+		"name" : "DzPGMergeFollowerFacetsAction",
+		"text" : "Merge Fitted Figure(s) Geometry",
+		"custom" : false
+	},
+	{
+		"name" : "DzPGSetSubDWeightAction",
+		"text" : "Set Subdivision Weight...",
+		"custom" : false
+	},
+	{
+		"name" : "DzPrimitiveAction",
+		"text" : "New Primitive...",
+		"custom" : false
+	},
+	{
+		"name" : "DzPropertyHierarchyPaneAction",
+		"text" : "Property Hierarchy",
+		"custom" : false
+	},
+	{
+		"name" : "DzERCFreezeAction",
+		"text" : "ERC Freeze...",
+		"custom" : false
+	},
+	{
+		"name" : "DzERCBakeAction",
+		"text" : "ERC Bake...",
+		"custom" : false
+	},
+	{
+		"name" : "DzERCBakeKeyedAction",
+		"text" : "ERC Bake Keyed...",
+		"custom" : false
+	},
+	{
+		"name" : "DzPuppeteerPaneAction",
+		"text" : "Puppeteer",
+		"custom" : false
+	},
+	{
+		"name" : "DzPuppeteerFilterAction",
+		"text" : "Puppeteer Preset (.ds*)...",
+		"custom" : false
+	},
+	{
+		"name" : "DzPuppeteerPlayAudioAction",
+		"text" : "Play Audio",
+		"custom" : false
+	},
+	{
+		"name" : "DzPuppeteerFillFramesAction",
+		"text" : "Fill Skipped Frames",
+		"custom" : false
+	},
+	{
+		"name" : "DzPuppeteerExtendFramesAction",
+		"text" : "Extend Frames",
+		"custom" : false
+	},
+	{
+		"name" : "DzPuppeteerZoomToFitAction",
+		"text" : "Zoom to Fit",
+		"custom" : false
+	},
+	{
+		"name" : "DzPuppeteerResetViewAction",
+		"text" : "Reset View",
+		"custom" : false
+	},
+	{
+		"name" : "DzPuppeteerCenterViewAction",
+		"text" : "Center View",
+		"custom" : false
+	},
+	{
+		"name" : "DzPuppeteerAddLayerAction",
+		"text" : "Add Layer...",
+		"custom" : false
+	},
+	{
+		"name" : "DzPuppeteerDeleteLayerAction",
+		"text" : "Delete Layer",
+		"custom" : false
+	},
+	{
+		"name" : "DzPuppeteerRenameLayerAction",
+		"text" : "Rename Layer...",
+		"custom" : false
+	},
+	{
+		"name" : "DzPuppeteerClearLayerAction",
+		"text" : "Clear Layer",
+		"custom" : false
+	},
+	{
+		"name" : "DzPuppeteerClearLayerAnimationAction",
+		"text" : "Clear Layer Animation",
+		"custom" : false
+	},
+	{
+		"name" : "DzPuppeteerDeletePoseAction",
+		"text" : "Delete Selected Pose",
+		"custom" : false
+	},
+	{
+		"name" : "DzPuppeteerUpdatePoseAction",
+		"text" : "Update Selected Pose",
+		"custom" : false
+	},
+	{
+		"name" : "DzPuppeteerAssignImageAction",
+		"text" : "Assign Image",
+		"custom" : false
+	},
+	{
+		"name" : "DzPuppeteerImageScaleAction",
+		"text" : "Scale Image",
+		"custom" : false
+	},
+	{
+		"name" : "DzPuppeteerDisablePoseAction",
+		"text" : "Toggle Enabled",
+		"custom" : false
+	},
+	{
+		"name" : "DzPuppeteerAssetFilterAction",
+		"text" : "Puppeteer Preset...",
+		"custom" : false
+	},
+	{
+		"name" : "DzRendAlbumAction",
+		"text" : "Render Album",
+		"custom" : false
+	},
+	{
+		"name" : "DzRendAlbumPrefsIconSizeAction",
+		"text" : "Icon Size...",
+		"custom" : false
+	},
+	{
+		"name" : "DzRendAlbumPrefsRendCntAction",
+		"text" : "Number of Renders...",
+		"custom" : false
+	},
+	{
+		"name" : "DzRendAlbumPrefsRendSizeAction",
+		"text" : "Maximum Render Size...",
+		"custom" : false
+	},
+	{
+		"name" : "DzEditTextureAction",
+		"text" : "Render Editor...",
+		"custom" : false
+	},
+	{
+		"name" : "DzRenderLibraryPaneAction",
+		"text" : "Render Library",
+		"custom" : false
+	},
+	{
+		"name" : "DzShaderCompileAction",
+		"text" : "Compile RenderMan Shaders...",
+		"custom" : false
+	},
+	{
+		"name" : "DzPoseFilterAction",
+		"text" : "Pose Preset (.ds*)...",
+		"custom" : false
+	},
+	{
+		"name" : "DzShaderFilterAction",
+		"text" : "Shader Preset (.ds*)...",
+		"custom" : false
+	},
+	{
+		"name" : "DzMaterialsFilterAction",
+		"text" : "Materials Preset (.ds*)...",
+		"custom" : false
+	},
+	{
+		"name" : "DzCharacterFilterAction",
+		"text" : "Character Preset (.ds*)...",
+		"custom" : false
+	},
+	{
+		"name" : "DzLightFilterAction",
+		"text" : "Light(s) Preset (.ds*)...",
+		"custom" : false
+	},
+	{
+		"name" : "DzCameraFilterAction",
+		"text" : "Camera(s) Preset (.ds*)...",
+		"custom" : false
+	},
+	{
+		"name" : "DzUVSetFilterAction",
+		"text" : "UV Preset (.ds*)...",
+		"custom" : false
+	},
+	{
+		"name" : "DzRenderSettingsFilterAction",
+		"text" : "Render Settings Preset (.ds*)...",
+		"custom" : false
+	},
+	{
+		"name" : "DzSceneSubsetAssetFilterAction",
+		"text" : "Scene Subset...",
+		"custom" : false
+	},
+	{
+		"name" : "DzHierarchicalMaterialAssetFilterAction",
+		"text" : "Hierarchical Material(s) Preset...",
+		"custom" : false
+	},
+	{
+		"name" : "DzHierarchicalPoseAssetFilterAction",
+		"text" : "Hierarchical Pose Preset...",
+		"custom" : false
+	},
+	{
+		"name" : "DzWearablesAssetFilterAction",
+		"text" : "Wearable(s) Preset...",
+		"custom" : false
+	},
+	{
+		"name" : "DzCharacterAssetFilterAction",
+		"text" : "Character Preset...",
+		"custom" : false
+	},
+	{
+		"name" : "DzPropertiesAssetFilterAction",
+		"text" : "Properties Preset...",
+		"custom" : false
+	},
+	{
+		"name" : "DzShapingAssetFilterAction",
+		"text" : "Shaping Preset...",
+		"custom" : false
+	},
+	{
+		"name" : "DzPoseAssetFilterAction",
+		"text" : "Pose Preset...",
+		"custom" : false
+	},
+	{
+		"name" : "DzMaterialAssetFilterAction",
+		"text" : "Material(s) Preset...",
+		"custom" : false
+	},
+	{
+		"name" : "DzShaderAssetFilterAction",
+		"text" : "Shader Preset...",
+		"custom" : false
+	},
+	{
+		"name" : "DzCameraAssetFilterAction",
+		"text" : "Camera(s) Preset...",
+		"custom" : false
+	},
+	{
+		"name" : "DzLightAssetFilterAction",
+		"text" : "Light(s) Preset...",
+		"custom" : false
+	},
+	{
+		"name" : "DzRenderSettingsAssetFilterAction",
+		"text" : "Render Settings Preset...",
+		"custom" : false
+	},
+	{
+		"name" : "DzSimulationSettingsAssetFilterAction",
+		"text" : "Simulation Settings Preset...",
+		"custom" : false
+	},
+	{
+		"name" : "DzScriptedStepsPaneAction",
+		"text" : "Steps",
+		"custom" : false
+	},
+	{
+		"name" : "DzShaderBuilderPaneAction",
+		"text" : "Shader Builder",
+		"custom" : false
+	},
+	{
+		"name" : "DzSBResetShaderAction",
+		"text" : "Reset Shader",
+		"custom" : false
+	},
+	{
+		"name" : "DzSBRestoreShaderNetworksAction",
+		"text" : "Restore Default Examples",
+		"custom" : false
+	},
+	{
+		"name" : "DzRSLEditorPaneAction",
+		"text" : "RSL Editor",
+		"custom" : false
+	},
+	{
+		"name" : "DzREPCustomColorsAction",
+		"text" : "Customize Syntax Colors",
+		"custom" : false
+	},
+	{
+		"name" : "DzShaderMixerPaneAction",
+		"text" : "Shader Mixer",
+		"custom" : false
+	},
+	{
+		"name" : "DzSMNewShaderAction",
+		"text" : "New Shader...",
+		"custom" : false
+	},
+	{
+		"name" : "DzSMOpenShaderAction",
+		"text" : "Open Shader...",
+		"custom" : false
+	},
+	{
+		"name" : "DzSMImportShaderAction",
+		"text" : "Import From Scene...",
+		"custom" : false
+	},
+	{
+		"name" : "DzSMCloseShaderAction",
+		"text" : "Close Shader",
+		"custom" : false
+	},
+	{
+		"name" : "DzSMSaveShaderAction",
+		"text" : "Save Shader...",
+		"custom" : false
+	},
+	{
+		"name" : "DzSMGeneralPrefsAction",
+		"text" : "Preferences...",
+		"custom" : false
+	},
+	{
+		"name" : "DzSMCutBricksAction",
+		"text" : "Cut Selected Brick(s)",
+		"custom" : false
+	},
+	{
+		"name" : "DzSMCopyBricksAction",
+		"text" : "Copy Selected Brick(s)",
+		"custom" : false
+	},
+	{
+		"name" : "DzSMPasteBricksAction",
+		"text" : "Paste Brick(s)",
+		"custom" : false
+	},
+	{
+		"name" : "DzSMDeleteBricksAction",
+		"text" : "Delete Selected Brick(s)",
+		"custom" : false
+	},
+	{
+		"name" : "DzSMGroupBricksAction",
+		"text" : "Group Selected Bricks",
+		"custom" : false
+	},
+	{
+		"name" : "DzSMBricksAlignTopsAction",
+		"text" : "Selected Brick Tops",
+		"custom" : false
+	},
+	{
+		"name" : "DzSMBricksAlignLeftsAction",
+		"text" : "Selected Brick Lefts",
+		"custom" : false
+	},
+	{
+		"name" : "DzSMBricksAlignRightsAction",
+		"text" : "Selected Brick Rights",
+		"custom" : false
+	},
+	{
+		"name" : "DzSMBricksAlignBottomsAction",
+		"text" : "Selected Brick Bottoms",
+		"custom" : false
+	},
+	{
+		"name" : "DzSMZoomToFitAction",
+		"text" : "Zoom to Fit",
+		"custom" : false
+	},
+	{
+		"name" : "DzSMBricksFrontAction",
+		"text" : "Selected Brick(s) To Front",
+		"custom" : false
+	},
+	{
+		"name" : "DzSMBricksBackAction",
+		"text" : "Selected Brick(s) To Back",
+		"custom" : false
+	},
+	{
+		"name" : "DzSMArrangeBricksAction",
+		"text" : "Auto-Arrange Bricks",
+		"custom" : false
+	},
+	{
+		"name" : "DzSMArrangeSelectedBricksAction",
+		"text" : "Auto-Arrange From Selected Brick(s)",
+		"custom" : false
+	},
+	{
+		"name" : "DzSMShaderPrefsAction",
+		"text" : "Shader Name...",
+		"custom" : false
+	},
+	{
+		"name" : "DzSMOnlineDocsAction",
+		"text" : "Online Documentation...",
+		"custom" : false
+	},
+	{
+		"name" : "DzSMRefreshCustomAction",
+		"text" : "Refresh Custom Bricks",
+		"custom" : false
+	},
+	{
+		"name" : "DzSMBrowseCustomAction",
+		"text" : "Browse to Custom Bricks location...",
+		"custom" : false
+	},
+	{
+		"name" : "DzMDLDirectoryManagerAction",
+		"text" : "MDL Directory Manager...",
+		"custom" : false
+	},
+	{
+		"name" : "DzSmartContentPaneAction",
+		"text" : "Smart Content",
+		"custom" : false
+	},
+	{
+		"name" : "DzSCStandardViewAction",
+		"text" : "Standard View",
+		"custom" : false
+	},
+	{
+		"name" : "DzSCBasicViewAction",
+		"text" : "Basic View",
+		"custom" : false
+	},
+	{
+		"name" : "DzSCFilesSideNavCollapsibleAction",
+		"text" : "Allow Files Navigation Collapse",
+		"custom" : false
+	},
+	{
+		"name" : "DzSCProductsSideNavCollapsibleAction",
+		"text" : "Allow Products Navigation Collapse",
+		"custom" : false
+	},
+	{
+		"name" : "DzSCSyncCategorySelectionAction",
+		"text" : "Sync Category Selection",
+		"custom" : false
+	},
+	{
+		"name" : "DzSCSyncFilterTextAction",
+		"text" : "Sync Filter Text",
+		"custom" : false
+	},
+	{
+		"name" : "DzSCSyncFilterContextAction",
+		"text" : "Sync Filter By Context",
+		"custom" : false
+	},
+	{
+		"name" : "DzSCEditProductMetadataAction",
+		"text" : "&Edit Product Metadata...",
+		"custom" : false
+	},
+	{
+		"name" : "DzInstallPaneAction",
+		"text" : "Install",
+		"custom" : false
+	},
+	{
+		"name" : "DzSpotRenderToolAction",
+		"text" : "Spot Render",
+		"custom" : false
+	},
+	{
+		"name" : "DzStrandHairCreateNodeAction",
+		"text" : "New Strand-Based Hair...",
+		"custom" : false
+	},
+	{
+		"name" : "DzStrandHairEditorAction",
+		"text" : "Edit Strand-Based Hair...",
+		"custom" : false
+	},
+	{
+		"name" : "DzStrandHairBasicEditorAction",
+		"text" : "Edit Strand-Based Hair (Basic)...",
+		"custom" : false
+	},
+	{
+		"name" : "DzTextureAtlas",
+		"text" : "Texture Atlas...",
+		"custom" : false
+	},
+	{
+		"name" : "DzTextureAtlasLinesAction",
+		"text" : "Texture Atlas Lines...",
+		"custom" : false
+	},
+	{
+		"name" : "DzTimePaneAction",
+		"text" : "Timeline",
+		"custom" : false
+	},
+	{
+		"name" : "DzAddKeysAction",
+		"text" : "Create Keys (Selected Nodes)",
+		"custom" : false
+	},
+	{
+		"name" : "DzDeleteKeysAction",
+		"text" : "Delete Keys (Selected Nodes)",
+		"custom" : false
+	},
+	{
+		"name" : "DzLoopToggleAction",
+		"text" : "Toggle Looping",
+		"custom" : false
+	},
+	{
+		"name" : "DzNextFrameAction",
+		"text" : "Step to Next Frame",
+		"custom" : false
+	},
+	{
+		"name" : "DzPlayToggleAction",
+		"text" : "Play / Pause",
+		"custom" : false
+	},
+	{
+		"name" : "DzPrevFrameAction",
+		"text" : "Step to Previous Frame",
+		"custom" : false
+	},
+	{
+		"name" : "DzSkipToNextKeyAction",
+		"text" : "Skip to Next Key",
+		"custom" : false
+	},
+	{
+		"name" : "DzSkipToPlayrangeEndAction",
+		"text" : "Skip to Play Range End",
+		"custom" : false
+	},
+	{
+		"name" : "DzSkipToPlayrangeStartAction",
+		"text" : "Skip to Play Range Start",
+		"custom" : false
+	},
+	{
+		"name" : "DzSkipToPrevKeyAction",
+		"text" : "Skip to Previous Key",
+		"custom" : false
+	},
+	{
+		"name" : "DzTimePaneBasicViewAction",
+		"text" : "Basic View",
+		"custom" : false
+	},
+	{
+		"name" : "DzTimePaneIntermediateViewAction",
+		"text" : "Intermediate View",
+		"custom" : false
+	},
+	{
+		"name" : "DzTimePaneAdvancedViewAction",
+		"text" : "Advanced View",
+		"custom" : false
+	},
+	{
+		"name" : "DzTimePaneMonitorParametersPaneAction",
+		"text" : "Monitor Parameters Pane",
+		"custom" : false
+	},
+	{
+		"name" : "DzTimePanePlayAllFramesAction",
+		"text" : "Play All Frames",
+		"custom" : false
+	},
+	{
+		"name" : "DzTimePanePrevKeyAction",
+		"text" : "Skip to Previous Key (Filtered)",
+		"custom" : false
+	},
+	{
+		"name" : "DzTimePaneNextKeyAction",
+		"text" : "Skip to Next Key (Filtered)",
+		"custom" : false
+	},
+	{
+		"name" : "DzTimePaneCreateKeysAction",
+		"text" : "Create Keys (Filtered)",
+		"custom" : false
+	},
+	{
+		"name" : "DzTimePaneDeleteSelectedKeysAction",
+		"text" : "Delete Selected Keys",
+		"custom" : false
+	},
+	{
+		"name" : "DzTimePaneCopySelectedKeysAction",
+		"text" : "Copy Selected Key(s)",
+		"custom" : false
+	},
+	{
+		"name" : "DzTimePanePasteKeysAction",
+		"text" : "Paste Key(s)",
+		"custom" : false
+	},
+	{
+		"name" : "DzTimePaneSetKeyScopeObjectAction",
+		"text" : "Object",
+		"custom" : false
+	},
+	{
+		"name" : "DzTimePaneSetKeyScopeNodeRecurseAction",
+		"text" : "Node Recurse",
+		"custom" : false
+	},
+	{
+		"name" : "DzTimePaneSetKeyScopeNodeAction",
+		"text" : "Node",
+		"custom" : false
+	},
+	{
+		"name" : "DzTimePaneSetKeyScopePropertiesAction",
+		"text" : "Properties",
+		"custom" : false
+	},
+	{
+		"name" : "DzTimePaneSetPropertyTypeTranslationAction",
+		"text" : "Translation (T)",
+		"custom" : false
+	},
+	{
+		"name" : "DzTimePaneSetPropertyTypeRotationAction",
+		"text" : "Rotation (R)",
+		"custom" : false
+	},
+	{
+		"name" : "DzTimePaneSetPropertyTypeScaleAction",
+		"text" : "Scale (S)",
+		"custom" : false
+	},
+	{
+		"name" : "DzTimePaneSetPropertyTypeOtherAction",
+		"text" : "Other (O)",
+		"custom" : false
+	},
+	{
+		"name" : "DzTimePaneSetPropertyTypeAliasAction",
+		"text" : "Alias (A)",
+		"custom" : false
+	},
+	{
+		"name" : "DzTimePaneSetPropertyTypeHiddenAction",
+		"text" : "Hidden (H)",
+		"custom" : false
+	},
+	{
+		"name" : "DzTimePaneSetInterpTcbAction",
+		"text" : "TCB",
+		"custom" : false
+	},
+	{
+		"name" : "DzTimePaneSetInterpLinearAction",
+		"text" : "Linear",
+		"custom" : false
+	},
+	{
+		"name" : "DzTimePaneSetInterpConstantAction",
+		"text" : "Constant",
+		"custom" : false
+	},
+	{
+		"name" : "DzTimePaneSelectItemPlayRangeKeysAction",
+		"text" : "Select Item Keys (Filtered)",
+		"custom" : false
+	},
+	{
+		"name" : "DzTimePaneSelectItemAnimRangeKeysAction",
+		"text" : "Select All Item Keys (Filtered)",
+		"custom" : false
+	},
+	{
+		"name" : "DzTimePaneDeselectItemPlayRangeKeysAction",
+		"text" : "Deselect Item Keys (Filtered)",
+		"custom" : false
+	},
+	{
+		"name" : "DzTimePaneDeselectItemAnimRangeKeysAction",
+		"text" : "Deselect All Item Keys (Filtered)",
+		"custom" : false
+	},
+	{
+		"name" : "DzTimePaneExpandAllItemsAction",
+		"text" : "Expand All",
+		"custom" : false
+	},
+	{
+		"name" : "DzTimePaneExpandItemAction",
+		"text" : "Expand Item",
+		"custom" : false
+	},
+	{
+		"name" : "DzTimePaneExpandFromItemAction",
+		"text" : "Expand from Item",
+		"custom" : false
+	},
+	{
+		"name" : "DzTimePaneCollapseAllItemsAction",
+		"text" : "Collapse All",
+		"custom" : false
+	},
+	{
+		"name" : "DzTimePaneCollapseItemAction",
+		"text" : "Collapse Item",
+		"custom" : false
+	},
+	{
+		"name" : "DzTimePaneCollapseFromItemAction",
+		"text" : "Collapse from Item",
+		"custom" : false
+	},
+	{
+		"name" : "DzTimePaneMoveRootNodeToTopAction",
+		"text" : "Move Root Node to Top",
+		"custom" : false
+	},
+	{
+		"name" : "DzTimePaneMoveRootNodeUpAction",
+		"text" : "Move Root Node Up",
+		"custom" : false
+	},
+	{
+		"name" : "DzTimePaneMoveRootNodeDownAction",
+		"text" : "Move Root Node Down",
+		"custom" : false
+	},
+	{
+		"name" : "DzTimePaneMoveRootNodeToBottomAction",
+		"text" : "Move Root Node to Bottom",
+		"custom" : false
+	},
+	{
+		"name" : "DzTimePaneRefreshDopesheetAction",
+		"text" : "Refresh",
+		"custom" : false
+	},
+	{
+		"name" : "DzTimePaneFrameGraphKeysAction",
+		"text" : "Frame Keys",
+		"custom" : false
+	},
+	{
+		"name" : "DzTransferUtilityAction",
+		"text" : "Transfer Utility...",
+		"custom" : false
+	},
+	{
+		"name" : "DzConvertFigureAction",
+		"text" : "Convert Figure to Weight Mapping...",
+		"custom" : false
+	},
+	{
+		"name" : "DzConvertLocalMapsToGeneralAction",
+		"text" : "Convert TriAx Weight to General Weight",
+		"custom" : false
+	},
+	{
+		"name" : "DzConvertToBlendedLocalGeneralAction",
+		"text" : "Convert TriAx/General Weight to Blended Weight",
+		"custom" : false
+	},
+	{
+		"name" : "DzClearGeneratedMorphsAction",
+		"text" : "Clear Generated Morphs",
+		"custom" : false
+	},
+	{
+		"name" : "DzConvertGeneralMapsToLocalAction",
+		"text" : "Convert General Weight to TriAx Weight",
+		"custom" : false
+	},
+	{
+		"name" : "DzClearGeneralWeightsAction",
+		"text" : "Clear General Weight",
+		"custom" : false
+	},
+	{
+		"name" : "DzClearLocalWeightsAction",
+		"text" : "Clear TriAx Weight",
+		"custom" : false
+	},
+	{
+		"name" : "DzClearScaleWeightsAction",
+		"text" : "Clear Scale Weight",
+		"custom" : false
+	},
+	{
+		"name" : "DzNodeWeightBrushToolAction",
+		"text" : "Node Weight Map Brush",
+		"custom" : false
+	},
+	{
+		"name" : "DzNodeWeightSymAction",
+		"text" : "Weight Map Symmetry...",
+		"custom" : false
+	},
+	{
+		"name" : "DzNodeWeightNormalizeAction",
+		"text" : "Normalize Weight",
+		"custom" : false
+	},
+	{
+		"name" : "DzShowChildrenNodeWeightsAction",
+		"text" : "Show Children Weights",
+		"custom" : false
+	},
+	{
+		"name" : "DzNodeWeightGeneralMapAction",
+		"text" : "General Map",
+		"custom" : false
+	},
+	{
+		"name" : "DzNodeWeightScaleMapAction",
+		"text" : "Scale Map",
+		"custom" : false
+	},
+	{
+		"name" : "DzNodeWeightXRotationMapAction",
+		"text" : "X Rotation Map",
+		"custom" : false
+	},
+	{
+		"name" : "DzNodeWeightXBulgeLMapAction",
+		"text" : "X Bulge Left Map",
+		"custom" : false
+	},
+	{
+		"name" : "DzNodeWeightXBulgeRMapAction",
+		"text" : "X Bulge Right Map",
+		"custom" : false
+	},
+	{
+		"name" : "DzNodeWeightYRotationMapAction",
+		"text" : "Y Rotation Map",
+		"custom" : false
+	},
+	{
+		"name" : "DzNodeWeightYBulgeLMapAction",
+		"text" : "Y Bulge Left Map",
+		"custom" : false
+	},
+	{
+		"name" : "DzNodeWeightYBulgeRMapAction",
+		"text" : "Y Bulge Right Map",
+		"custom" : false
+	},
+	{
+		"name" : "DzNodeWeightZRotationMapAction",
+		"text" : "Z Rotation Map",
+		"custom" : false
+	},
+	{
+		"name" : "DzNodeWeightZBulgeLMapAction",
+		"text" : "Z Bulge Left Map",
+		"custom" : false
+	},
+	{
+		"name" : "DzNodeWeightZBulgeRMapAction",
+		"text" : "Z Bulge Right Map",
+		"custom" : false
+	},
+	{
+		"name" : "DzFilterNodeWeightAction",
+		"text" : "Filter Weights Below...",
+		"custom" : false
+	},
+	{
+		"name" : "DzNodeWeightBySelectionSetAction",
+		"text" : "Fill by Bone Selection Group(s)",
+		"custom" : false
+	},
+	{
+		"name" : "DzCopyNodeWeightMapsAction",
+		"text" : "Copy Weight Maps...",
+		"custom" : false
+	},
+	{
+		"name" : "DzCopyOtherFigureMapsAction",
+		"text" : "Copy Weight Maps From Figure...",
+		"custom" : false
+	},
+	{
+		"name" : "DzDistributeSelectedWeightsAction",
+		"text" : "Distribute Selected Bone Weights",
+		"custom" : false
+	},
+	{
+		"name" : "DzNewPushModifierWeightNodeAction",
+		"text" : "New Push Modifier Weight Node...",
+		"custom" : false
+	},
+	{
+		"icon" : "C:/Program Files/DAZ 3D/DAZStudio4/plugins/LAMH2IrayCatalyzerAM/LAMH2IrayCatalyzerLogo.png",
+		"name" : "LAMH2IrayCatalyzerPaneAction",
+		"text" : "LAMH2Iray Catalyzer",
+		"custom" : false
+	},
+	{
+		"name" : "lookAtMyHairViewToolAction",
+		"text" : "New 'Look at my Hair' Object...",
+		"custom" : false
+	},
+	{
+		"name" : "lookAtMyHairPaneAction",
+		"text" : "Look at my Hair",
+		"custom" : false
+	},
+	{
+		"name" : "MtDforcePaneAction",
+		"text" : "dForce Companion",
+		"custom" : false
+	},
+	{
+		"name" : "MgToolAction",
+		"text" : "Mesh Grabber",
+		"custom" : false
+	},
+	{
+		"name" : "MgToogleDrawGizmoAxesAction",
+		"text" : "Show gizmo axes",
+		"custom" : false
+	},
+	{
+		"name" : "MgToogleDrawGizmoRotationsAction",
+		"text" : "Show gizmo rotation controls",
+		"custom" : false
+	},
+	{
+		"name" : "MgToogleDrawGizmoSphereAction",
+		"text" : "Show gizmo falloff radius sphere",
+		"custom" : false
+	},
+	{
+		"name" : "MgFaceSelectionAction",
+		"text" : "Polygon (face) selection",
+		"custom" : false
+	},
+	{
+		"name" : "MgEdgeSelectionAction",
+		"text" : "Edge selection",
+		"custom" : false
+	},
+	{
+		"name" : "MgVertexSelectionAction",
+		"text" : "Vertex selection",
+		"custom" : false
+	},
+	{
+		"name" : "MgSelectAllAction",
+		"text" : "Select all",
+		"custom" : false
+	},
+	{
+		"name" : "MgClearSelectionAction",
+		"text" : "Clear selection",
+		"custom" : false
+	},
+	{
+		"name" : "MgGrowSelectionAction",
+		"text" : "Grow selection",
+		"custom" : false
+	},
+	{
+		"name" : "MgShrinkSelectionAction",
+		"text" : "Shrink selection",
+		"custom" : false
+	},
+	{
+		"name" : "MgGrowFalloffRadiusAction",
+		"text" : "Grow falloff radius",
+		"custom" : false
+	},
+	{
+		"name" : "MgShrinkFalloffRadiusAction",
+		"text" : "Shrink falloff radius",
+		"custom" : false
+	},
+	{
+		"name" : "MgResetAllDeltasAction",
+		"text" : "Reset mesh grabber (clear all deltas)...",
+		"custom" : false
+	},
+	{
+		"name" : "MgAboutAction",
+		"text" : "About ManFriday's Mesh Grabber...",
+		"custom" : false
+	},
+	{
+		"name" : "MgHelpAction",
+		"text" : "Help (open Mesh Grabber PDF documentation)",
+		"custom" : false
+	},
+	{
+		"name" : "RqAction",
+		"text" : "ManFriday's Render Queue...",
+		"custom" : false
+	},
+	{
+		"name" : "CcContentActionFiguresFemale",
+		"text" : "Figures (female)...",
+		"custom" : false
+	},
+	{
+		"name" : "CcContentActionFiguresMale",
+		"text" : "Figures (male)...",
+		"custom" : false
+	},
+	{
+		"name" : "CcContentActionWardrobeFemale",
+		"text" : "Wardrobe (female)...",
+		"custom" : false
+	},
+	{
+		"name" : "CcContentActionWardrobeMale",
+		"text" : "Wardrobe (male)...",
+		"custom" : false
+	},
+	{
+		"name" : "CcContentActionHair",
+		"text" : "Hair...",
+		"custom" : false
+	},
+	{
+		"name" : "CcContentActionMaterials",
+		"text" : "Materials...",
+		"custom" : false
+	},
+	{
+		"name" : "CcContentActionPoses",
+		"text" : "Poses...",
+		"custom" : false
+	},
+	{
+		"name" : "MvmPaneAction",
+		"text" : "Movie Maker",
+		"custom" : false
+	},
+	{
+		"name" : "DzSceneInfoPaneAction",
+		"text" : "Scene Info",
+		"custom" : false
+	},
+	{
+		"name" : "StreamDeckSocketAction",
+		"text" : "Stream Deck",
+		"custom" : false
+	},
+	{
+		"name" : "PowerPosePaneAction",
+		"text" : "PowerPose",
+		"custom" : false
+	},
+	{
+		"name" : "DzPowerPoseEditModeAction",
+		"text" : "Edit Mode",
+		"custom" : false
+	},
+	{
+		"name" : "PowerPosePinAction",
+		"text" : "Toggle Pins",
+		"custom" : false
+	},
+	{
+		"name" : "PowerPoseUnPinAction",
+		"text" : "Clear Pins",
+		"custom" : false
+	},
+	{
+		"name" : "DzEasyPosingToolAction",
+		"text" : "ActivePose",
+		"custom" : false
+	}
+]}
