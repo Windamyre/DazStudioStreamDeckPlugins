@@ -52,7 +52,7 @@ namespace VisualMenu
                     string webContent = string.Empty;
                     using (var strm = new StreamReader(resp.GetResponseStream()))
                     {
-                        webContent = strm.ReadToEnd() ;
+                        webContent = strm.ReadToEnd();
                     }
                     _actions = JsonConvert.DeserializeObject<List<ActionItem>>((webContent));
                     _actions.Sort(ActionItem.CompareActions);
@@ -70,7 +70,7 @@ namespace VisualMenu
     }
     public class DazCustomList : IActionList
     {
-        public   DazCustomList ()
+        public DazCustomList()
         {
 
         }
@@ -98,7 +98,7 @@ namespace VisualMenu
                     string webContent = string.Empty;
                     using (var strm = new StreamReader(resp.GetResponseStream()))
                     {
-                        webContent =  strm.ReadToEnd() ;
+                        webContent = strm.ReadToEnd();
                     }
                     _actions = JsonConvert.DeserializeObject<List<ActionItem>>(webContent);
                     _actions.RemoveAll(x => !x.IsCustom);
@@ -157,7 +157,7 @@ namespace VisualMenu
     }
     public class ActionItem
     {
-        public ActionItem ()
+        public ActionItem()
         {
 
         }
@@ -165,8 +165,19 @@ namespace VisualMenu
         public string Icon { get; set; } = string.Empty;
         [JsonProperty(PropertyName = "name")]
         public string Name { get; set; } = string.Empty;
+    
+        private string _text;
         [JsonProperty(PropertyName = "text")]
-        public string Text { get; set; } = string.Empty;
+        public string Text
+        {
+            get { return _text; }
+            set 
+            {
+                _text = value;
+                _text = _text.Replace("&", "");
+            }
+        }
+
         [JsonProperty(PropertyName = "custom")]
         public bool IsCustom
         {
