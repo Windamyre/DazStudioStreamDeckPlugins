@@ -92,7 +92,7 @@ namespace VisualMenu
         public DazCustomActions(SDConnection connection, InitialPayload payload) : base(connection, payload)
         {
             Logger.Instance.LogMessage(TracingLevel.INFO, "Constructor Loaded. ");
-
+            
             if (payload.Settings == null || payload.Settings.Count == 0)
             {
                 this.settings = PluginSettings.CreateDefaultSettings();
@@ -227,7 +227,7 @@ namespace VisualMenu
 
         private string LoadImageData()
         {
-            string imageFileName;
+            string imageFileName = string.Empty;
             string retvalue = string.Empty;
 
             ActionItem actionItem = settings.CurrentAction; // settings.Actions.Find(x => x.Name.Equals(settings.ActionName));

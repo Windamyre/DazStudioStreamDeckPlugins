@@ -128,7 +128,7 @@ namespace VisualMenu
         {
             get { return _lastLoaded; }
         }
-        private string _sourceFile;
+        private string _sourceFile = string.Empty;
 
         public string SourceFile
         {
@@ -166,15 +166,23 @@ namespace VisualMenu
         [JsonProperty(PropertyName = "name")]
         public string Name { get; set; } = string.Empty;
     
-        private string _text;
+        private string _text = string.Empty;
         [JsonProperty(PropertyName = "text")]
         public string Text
         {
             get { return _text; }
-            set 
+            set
             {
-                _text = value;
-                _text = _text.Replace("&", "");
+                if (string.IsNullOrWhiteSpace(value))
+                {
+                    _text = string.Empty;
+                } 
+                else
+                {
+                    
+                    _text = value;
+                    _text = _text.Replace("&", "");
+                }
             }
         }
 
