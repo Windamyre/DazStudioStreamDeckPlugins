@@ -227,7 +227,7 @@ namespace VisualMenu
 
         private string LoadImageData()
         {
-            string imageFileName;
+            string imageFileName = string.Empty;
             string retvalue = string.Empty;
 
             ActionItem actionItem = settings.CurrentAction; // settings.Actions.Find(x => x.Name.Equals(settings.ActionName));
