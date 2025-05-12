@@ -19,7 +19,7 @@ namespace VisualMenu
     //
     [PluginActionId("com.windamyre.daztools.dazstudioactions")]
 
-    public class DazStudioActions : PluginBase
+    public class DazStudioActions : KeypadBase
     {
         #region PluginSettingsClass
         private class PluginSettings

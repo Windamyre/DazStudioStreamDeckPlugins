@@ -1,0 +1,84 @@
+{
+  "Actions": [
+    {
+      "Icon": "Images/icon",
+      "Name": "TODO_ENTER_NAME_OF_KEY_ACTION",
+      "States": [
+        {
+          "Image": "Images/pluginAction",
+          "TitleAlignment": "middle",
+          "FontSize": "12"
+        }
+      ],
+      "SupportedInMultiActions": false,
+      "Tooltip": "TODO_ENTER_TOOLTIP",
+      "UUID": "DazStreamDeckPlugin.keyaction",
+      "PropertyInspectorPath": "PropertyInspector/PluginActionPI.html"
+    },
+    {
+      "Icon": "Images/icon",
+      "Name": "TODO_NAME_OF_DIAL_ACTION",
+      "States": [
+        {
+          "Image": "Images/pluginAction",
+          "TitleAlignment": "middle",
+          "FontSize": "12"
+        }
+      ],
+      "Controllers": [ "Encoder" ],
+      "Encoder": {
+        "layout": "DialLayout.json",
+        "TriggerDescription": {
+          "Rotate": "Increase/Decrease",
+          "Push": "Toggle mute"
+        }
+      },
+      "SupportedInMultiActions": false,
+      "Tooltip": "TODO_ENTER_TOOLTIP",
+      "UUID": "DazStreamDeckPlugin.dialaction",
+      "PropertyInspectorPath": "PropertyInspector/DialActionPI.html"
+    },
+    {
+      "Icon": "Images/icon",
+      "Name": "TODO_NAME_OF_KEY_AND_DIALS_ACTION",
+      "States": [
+        {
+          "Image": "Images/pluginAction",
+          "TitleAlignment": "middle",
+          "FontSize": "12"
+        }
+      ],
+      "Controllers": [ "Keypad", "Encoder" ],
+      "Encoder": {
+        "layout": "DialLayout.json",
+        "TriggerDescription": {
+          "Rotate": "Increase/Decrease",
+          "Push": "Toggle mute"
+        }
+      },
+      "SupportedInMultiActions": false,
+      "Tooltip": "TODO_ENTER_TOOLTIP",
+      "UUID": "DazStreamDeckPlugin.keydialaction",
+      "PropertyInspectorPath": "PropertyInspector/PluginActionPI.html"
+    }
+  ],
+  "Author": "TODO_ENTER_YOUR_NAME",
+  "Name": "DazStreamDeckPlugin",
+  "Description": "TODO_ENTER_PLUGIN_DESCRIPTION",
+  "Icon": "Images/pluginIcon",
+  "URL": "https://TODO_ENTER_YOUR_HOMEPAGE.com",
+  "Version": "1.0",
+  "CodePath": "DazStreamDeckPlugin",
+  "Category": "Custom",
+  "CategoryIcon": "Images/categoryIcon",
+  "OS": [
+    {
+      "Platform": "windows",
+      "MinimumVersion": "10"
+    }
+  ],
+  "SDKVersion": 2,
+  "Software": {
+    "MinimumVersion": "6.4"
+  }
+}
